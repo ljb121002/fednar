@@ -1,0 +1,5 @@
+fedavg(lrdd)_training_loss [nan, nan, nan, nan, nan, nan]
+fedavg(lrdd)_training_accuracy [10.000000030845404, 10.000000030845404, 10.000000030845404, 10.000000030845404, 10.000000030845404, 10.000000030845404]
+fedavg(lrdd)_test_loss [nan, nan, nan, nan, nan, nan]
+fedavg(lrdd)_testing_accuracy [array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32)]
+fedavg(lrdd)_global_learning_rate [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]

@@ -1,0 +1,10 @@
+wandb: Currently logged in as: ljb. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.11 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.10
+wandb: Run data is saved locally in /home/junbo.li/code/FedExP/wandb/run-20230310_123942-2jm4oy0v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ./log/fedavg_local_mom1
+wandb: ⭐️ View project at https://wandb.ai/ljb/fedexp
+wandb: 🚀 View run at https://wandb.ai/ljb/fedexp/runs/2jm4oy0v
+slurmstepd-gpu-22: error: *** JOB 22762 ON gpu-22 CANCELLED AT 2023-03-10T13:14:56 ***

@@ -1,0 +1,1643 @@
+wandb: Currently logged in as: ljb. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.11 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.10
+wandb: Run data is saved locally in /home/junbo.li/code/FedExP/wandb/run-20230309_050101-j6jbovsm
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ./log/fedavg_avg_eval
+wandb: ⭐️ View project at https://wandb.ai/ljb/fedexp
+wandb: 🚀 View run at https://wandb.ai/ljb/fedexp/runs/j6jbovsm
+Files already downloaded and verified
+Files already downloaded and verified
+Data statistics: {0: {0: 14, 1: 34, 2: 7, 3: 8, 4: 34, 5: 13, 8: 30, 9: 360}, 1: {0: 11, 3: 46, 4: 6, 5: 17, 7: 94, 8: 313, 9: 13}, 2: {0: 91, 1: 2, 2: 23, 3: 39, 4: 2, 5: 76, 6: 47, 7: 5, 8: 1, 9: 214}, 3: {0: 246, 1: 11, 2: 10, 3: 9, 5: 57, 6: 138, 7: 18, 9: 11}, 4: {0: 36, 1: 53, 2: 2, 3: 31, 4: 1, 5: 11, 6: 50, 7: 82, 8: 97, 9: 137}, 5: {0: 43, 1: 325, 2: 9, 4: 24, 5: 27, 7: 21, 8: 20, 9: 31}, 6: {0: 181, 1: 17, 2: 140, 4: 51, 7: 1, 8: 97, 9: 13}, 7: {0: 18, 1: 30, 2: 289, 5: 35, 6: 3, 8: 12, 9: 113}, 8: {0: 53, 1: 222, 2: 27, 3: 3, 4: 155, 5: 2, 7: 19, 8: 19}, 9: {0: 30, 1: 16, 2: 85, 4: 1, 5: 19, 6: 60, 7: 7, 9: 282}, 10: {0: 4, 1: 2, 2: 11, 3: 5, 4: 241, 5: 31, 6: 135, 7: 59, 9: 12}, 11: {0: 33, 1: 150, 2: 24, 3: 1, 5: 20, 6: 2, 8: 266, 9: 4}, 12: {1: 335, 2: 33, 3: 2, 4: 5, 5: 8, 6: 11, 7: 96, 8: 10}, 13: {0: 227, 1: 128, 2: 9, 3: 6, 6: 50, 7: 17, 8: 61, 9: 2}, 14: {1: 7, 2: 157, 3: 14, 4: 1, 6: 228, 7: 2, 8: 73, 9: 18}, 15: {0: 25, 1: 53, 2: 15, 3: 39, 4: 2, 5: 15, 6: 2, 7: 50, 8: 190, 9: 109}, 16: {0: 78, 1: 17, 2: 32, 4: 39, 5: 6, 6: 66, 7: 172, 8: 48, 9: 42}, 17: {0: 75, 2: 39, 4: 16, 6: 56, 8: 290, 9: 24}, 18: {2: 1, 5: 353, 6: 21, 7: 88, 8: 32, 9: 5}, 19: {0: 1, 1: 12, 2: 19, 3: 46, 4: 5, 5: 1, 6: 69, 7: 346, 8: 1}, 20: {0: 176, 1: 35, 2: 2, 3: 5, 5: 6, 6: 80, 7: 2, 8: 16, 9: 178}, 21: {0: 29, 4: 4, 5: 257, 6: 2, 7: 177, 8: 15, 9: 16}, 22: {0: 1, 1: 9, 2: 65, 3: 4, 4: 202, 5: 4, 7: 160, 8: 53, 9: 2}, 23: {0: 130, 1: 72, 4: 58, 7: 156, 9: 84}, 24: {0: 24, 2: 28, 3: 52, 4: 11, 5: 3, 7: 44, 8: 320, 9: 18}, 25: {0: 25, 1: 112, 3: 339, 4: 1, 5: 13, 6: 2, 7: 8}, 26: {0: 157, 1: 122, 2: 12, 3: 15, 4: 16, 5: 2, 6: 99, 7: 6, 8: 53, 9: 18}, 27: {1: 25, 2: 14, 3: 9, 4: 20, 5: 323, 6: 94, 7: 7, 9: 8}, 28: {0: 45, 2: 37, 3: 105, 4: 3, 5: 40, 6: 131, 7: 13, 9: 126}, 29: {0: 14, 1: 33, 2: 21, 4: 10, 5: 47, 6: 122, 7: 16, 8: 136, 9: 101}, 30: {1: 19, 4: 83, 5: 211, 6: 70, 7: 82, 8: 1, 9: 34}, 31: {0: 29, 2: 4, 3: 8, 5: 1, 6: 381, 7: 2, 8: 48, 9: 27}, 32: {0: 116, 2: 33, 3: 99, 4: 129, 5: 32, 6: 21, 7: 65, 8: 4, 9: 1}, 33: {2: 111, 3: 221, 5: 115, 6: 1, 8: 47, 9: 5}, 34: {0: 52, 1: 247, 2: 26, 3: 2, 4: 92, 5: 4, 6: 39, 8: 38}, 35: {0: 1, 1: 5, 2: 15, 3: 261, 4: 1, 5: 1, 7: 10, 8: 39, 9: 167}, 36: {0: 221, 1: 11, 2: 8, 5: 70, 6: 22, 8: 3, 9: 165}, 37: {0: 46, 1: 84, 2: 164, 3: 2, 4: 7, 6: 15, 7: 43, 8: 2, 9: 137}, 38: {1: 151, 2: 3, 4: 128, 5: 1, 6: 35, 7: 4, 8: 65, 9: 113}, 39: {0: 10, 1: 3, 2: 17, 3: 192, 4: 54, 5: 17, 6: 100, 7: 99, 9: 8}, 40: {0: 7, 1: 31, 2: 120, 3: 5, 4: 64, 6: 136, 9: 137}, 41: {0: 84, 1: 5, 2: 73, 3: 35, 4: 16, 5: 20, 6: 66, 7: 186, 8: 2, 9: 13}, 42: {0: 11, 1: 10, 2: 2, 4: 19, 5: 168, 6: 275, 7: 11, 8: 2, 9: 2}, 43: {0: 9, 1: 125, 2: 2, 4: 1, 5: 14, 7: 328, 8: 18, 9: 3}, 44: {0: 129, 1: 51, 2: 202, 3: 86, 4: 2, 6: 1, 7: 16, 9: 13}, 45: {1: 9, 2: 4, 4: 47, 5: 75, 6: 5, 7: 145, 8: 161, 9: 54}, 46: {0: 265, 1: 93, 2: 6, 5: 44, 7: 80, 8: 11, 9: 1}, 47: {0: 21, 1: 133, 2: 10, 3: 75, 4: 70, 7: 188, 9: 3}, 48: {0: 2, 1: 41, 2: 10, 4: 135, 6: 241, 7: 10, 8: 61}, 49: {1: 91, 2: 10, 3: 4, 4: 22, 5: 2, 6: 21, 7: 30, 8: 260, 9: 60}, 50: {0: 24, 3: 270, 4: 12, 5: 172, 6: 21, 8: 1}, 51: {0: 10, 1: 22, 3: 2, 4: 286, 5: 12, 7: 43, 9: 125}, 52: {0: 60, 1: 2, 2: 10, 3: 4, 4: 55, 5: 36, 7: 49, 8: 178, 9: 106}, 53: {0: 1, 1: 12, 2: 98, 4: 2, 5: 247, 6: 80, 7: 60}, 54: {0: 18, 2: 70, 3: 298, 4: 106, 5: 6, 7: 2}, 55: {0: 63, 2: 2, 3: 178, 4: 37, 5: 124, 6: 11, 7: 11, 8: 70, 9: 4}, 56: {0: 3, 1: 185, 2: 76, 3: 70, 4: 39, 5: 29, 6: 45, 7: 48, 8: 5}, 57: {0: 1, 3: 5, 4: 94, 6: 185, 7: 13, 8: 35, 9: 167}, 58: {0: 8, 1: 107, 2: 140, 3: 57, 5: 77, 7: 5, 8: 30, 9: 76}, 59: {0: 1, 1: 8, 2: 155, 3: 115, 5: 23, 6: 11, 7: 12, 9: 175}, 60: {0: 64, 1: 2, 2: 62, 3: 145, 4: 28, 5: 2, 7: 3, 8: 164, 9: 30}, 61: {0: 23, 2: 4, 3: 5, 4: 261, 5: 20, 6: 182, 7: 5}, 62: {0: 275, 1: 7, 2: 27, 3: 1, 6: 2, 7: 37, 8: 88, 9: 63}, 63: {0: 4, 1: 20, 2: 61, 3: 19, 4: 152, 5: 9, 6: 18, 7: 12, 8: 164, 9: 41}, 64: {0: 25, 1: 82, 2: 2, 3: 12, 4: 79, 5: 225, 6: 10, 7: 55, 9: 10}, 65: {1: 46, 2: 19, 3: 60, 4: 139, 7: 166, 8: 47, 9: 23}, 66: {0: 5, 1: 6, 2: 1, 4: 11, 5: 2, 6: 342, 7: 123, 9: 10}, 67: {0: 96, 1: 63, 2: 2, 3: 54, 4: 28, 5: 85, 7: 15, 9: 157}, 68: {0: 15, 1: 60, 2: 74, 3: 16, 5: 18, 6: 128, 7: 4, 8: 80, 9: 105}, 69: {1: 1, 2: 365, 3: 46, 5: 30, 7: 27, 8: 27, 9: 4}, 70: {1: 2, 2: 59, 3: 83, 4: 49, 5: 198, 6: 79, 7: 15, 9: 15}, 71: {0: 168, 1: 207, 2: 2, 3: 37, 4: 35, 5: 9, 6: 29, 8: 1, 9: 12}, 72: {0: 68, 1: 235, 2: 5, 4: 5, 5: 59, 7: 32, 8: 95, 9: 1}, 73: {0: 1, 1: 84, 2: 123, 3: 33, 4: 43, 5: 34, 6: 21, 8: 156, 9: 5}, 74: {0: 148, 1: 29, 3: 47, 4: 68, 6: 3, 7: 118, 8: 87}, 75: {1: 16, 2: 272, 3: 182, 4: 4, 5: 14, 6: 9, 7: 2, 9: 1}, 76: {0: 3, 1: 2, 2: 205, 4: 4, 5: 1, 7: 21, 8: 35, 9: 229}, 77: {0: 32, 2: 226, 5: 34, 6: 65, 8: 143}, 78: {0: 5, 1: 2, 3: 191, 4: 99, 5: 118, 6: 58, 7: 1, 8: 26}, 79: {0: 56, 1: 60, 2: 4, 3: 77, 4: 80, 6: 45, 7: 73, 8: 87, 9: 18}, 80: {1: 11, 2: 24, 3: 217, 4: 49, 5: 22, 6: 67, 8: 27, 9: 83}, 81: {1: 6, 2: 7, 3: 141, 4: 19, 5: 178, 6: 88, 7: 2, 8: 45, 9: 14}, 82: {1: 1, 2: 3, 3: 120, 4: 4, 5: 136, 6: 17, 7: 1, 8: 5, 9: 213}, 83: {0: 105, 1: 4, 2: 9, 4: 19, 5: 80, 7: 282, 9: 1}, 84: {0: 36, 1: 184, 3: 26, 5: 38, 6: 21, 7: 30, 8: 100, 9: 65}, 85: {1: 7, 2: 9, 3: 41, 4: 1, 6: 3, 7: 439}, 86: {0: 21, 1: 3, 3: 128, 4: 4, 5: 111, 7: 81, 8: 99, 9: 53}, 87: {1: 202, 2: 8, 4: 204, 5: 56, 7: 30}, 88: {0: 246, 1: 5, 2: 93, 3: 10, 4: 31, 7: 10, 8: 50, 9: 55}, 89: {0: 203, 1: 38, 2: 103, 3: 58, 4: 1, 5: 22, 6: 1, 8: 32, 9: 42}, 90: {1: 9, 2: 153, 3: 2, 4: 104, 5: 26, 7: 117, 8: 83, 9: 6}, 91: {0: 2, 1: 41, 2: 250, 3: 3, 4: 5, 5: 17, 6: 101, 7: 7, 8: 62, 9: 12}, 92: {1: 46, 2: 98, 3: 19, 4: 154, 5: 67, 6: 94, 7: 13, 8: 5, 9: 4}, 93: {0: 16, 1: 14, 2: 1, 3: 29, 4: 357, 5: 38, 6: 7, 8: 1, 9: 37}, 94: {0: 42, 1: 3, 2: 102, 4: 223, 5: 3, 6: 71, 8: 55, 9: 1}, 95: {1: 154, 3: 56, 4: 33, 5: 115, 6: 88, 7: 21, 9: 33}, 96: {1: 6, 2: 55, 3: 139, 4: 8, 5: 222, 7: 8, 9: 62}, 97: {0: 159, 1: 16, 2: 67, 3: 7, 4: 101, 5: 117, 6: 23, 7: 10}, 98: {0: 3, 1: 31, 2: 17, 3: 219, 4: 189, 5: 7, 6: 2, 7: 32}, 99: {0: 220, 1: 28, 2: 6, 3: 10, 6: 176, 8: 2, 9: 58}}
+Data ratio: [0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+ 0.01 0.01]
+Client  0  Training examples- 500  Test examples- 100
+Client  1  Training examples- 500  Test examples- 100
+Client  2  Training examples- 500  Test examples- 100
+Client  3  Training examples- 500  Test examples- 100
+Client  4  Training examples- 500  Test examples- 100
+Client  5  Training examples- 500  Test examples- 100
+Client  6  Training examples- 500  Test examples- 100
+Client  7  Training examples- 500  Test examples- 100
+Client  8  Training examples- 500  Test examples- 100
+Client  9  Training examples- 500  Test examples- 100
+Client  10  Training examples- 500  Test examples- 100
+Client  11  Training examples- 500  Test examples- 100
+Client  12  Training examples- 500  Test examples- 100
+Client  13  Training examples- 500  Test examples- 100
+Client  14  Training examples- 500  Test examples- 100
+Client  15  Training examples- 500  Test examples- 100
+Client  16  Training examples- 500  Test examples- 100
+Client  17  Training examples- 500  Test examples- 100
+Client  18  Training examples- 500  Test examples- 100
+Client  19  Training examples- 500  Test examples- 100
+Client  20  Training examples- 500  Test examples- 100
+Client  21  Training examples- 500  Test examples- 100
+Client  22  Training examples- 500  Test examples- 100
+Client  23  Training examples- 500  Test examples- 100
+Client  24  Training examples- 500  Test examples- 100
+Client  25  Training examples- 500  Test examples- 100
+Client  26  Training examples- 500  Test examples- 100
+Client  27  Training examples- 500  Test examples- 100
+Client  28  Training examples- 500  Test examples- 100
+Client  29  Training examples- 500  Test examples- 100
+Client  30  Training examples- 500  Test examples- 100
+Client  31  Training examples- 500  Test examples- 100
+Client  32  Training examples- 500  Test examples- 100
+Client  33  Training examples- 500  Test examples- 100
+Client  34  Training examples- 500  Test examples- 100
+Client  35  Training examples- 500  Test examples- 100
+Client  36  Training examples- 500  Test examples- 100
+Client  37  Training examples- 500  Test examples- 100
+Client  38  Training examples- 500  Test examples- 100
+Client  39  Training examples- 500  Test examples- 100
+Client  40  Training examples- 500  Test examples- 100
+Client  41  Training examples- 500  Test examples- 100
+Client  42  Training examples- 500  Test examples- 100
+Client  43  Training examples- 500  Test examples- 100
+Client  44  Training examples- 500  Test examples- 100
+Client  45  Training examples- 500  Test examples- 100
+Client  46  Training examples- 500  Test examples- 100
+Client  47  Training examples- 500  Test examples- 100
+Client  48  Training examples- 500  Test examples- 100
+Client  49  Training examples- 500  Test examples- 100
+Client  50  Training examples- 500  Test examples- 100
+Client  51  Training examples- 500  Test examples- 100
+Client  52  Training examples- 500  Test examples- 100
+Client  53  Training examples- 500  Test examples- 100
+Client  54  Training examples- 500  Test examples- 100
+Client  55  Training examples- 500  Test examples- 100
+Client  56  Training examples- 500  Test examples- 100
+Client  57  Training examples- 500  Test examples- 100
+Client  58  Training examples- 500  Test examples- 100
+Client  59  Training examples- 500  Test examples- 100
+Client  60  Training examples- 500  Test examples- 100
+Client  61  Training examples- 500  Test examples- 100
+Client  62  Training examples- 500  Test examples- 100
+Client  63  Training examples- 500  Test examples- 100
+Client  64  Training examples- 500  Test examples- 100
+Client  65  Training examples- 500  Test examples- 100
+Client  66  Training examples- 500  Test examples- 100
+Client  67  Training examples- 500  Test examples- 100
+Client  68  Training examples- 500  Test examples- 100
+Client  69  Training examples- 500  Test examples- 100
+Client  70  Training examples- 500  Test examples- 100
+Client  71  Training examples- 500  Test examples- 100
+Client  72  Training examples- 500  Test examples- 100
+Client  73  Training examples- 500  Test examples- 100
+Client  74  Training examples- 500  Test examples- 100
+Client  75  Training examples- 500  Test examples- 100
+Client  76  Training examples- 500  Test examples- 100
+Client  77  Training examples- 500  Test examples- 100
+Client  78  Training examples- 500  Test examples- 100
+Client  79  Training examples- 500  Test examples- 100
+Client  80  Training examples- 500  Test examples- 100
+Client  81  Training examples- 500  Test examples- 100
+Client  82  Training examples- 500  Test examples- 100
+Client  83  Training examples- 500  Test examples- 100
+Client  84  Training examples- 500  Test examples- 100
+Client  85  Training examples- 500  Test examples- 100
+Client  86  Training examples- 500  Test examples- 100
+Client  87  Training examples- 500  Test examples- 100
+Client  88  Training examples- 500  Test examples- 100
+Client  89  Training examples- 500  Test examples- 100
+Client  90  Training examples- 500  Test examples- 100
+Client  91  Training examples- 500  Test examples- 100
+Client  92  Training examples- 500  Test examples- 100
+Client  93  Training examples- 500  Test examples- 100
+Client  94  Training examples- 500  Test examples- 100
+Client  95  Training examples- 500  Test examples- 100
+Client  96  Training examples- 500  Test examples- 100
+Client  97  Training examples- 500  Test examples- 100
+Client  98  Training examples- 500  Test examples- 100
+Client  99  Training examples- 500  Test examples- 100
+No. of clients 100
+Algo  fedavg  Round No.  0
+Training Loss  2.324027089538575 Training Accuracy  10.264000025093555
+Test Loss 2.321437216949463 Test Accuracy  10.35
+Algo  fedavg  Round No.  1
+Training Loss  2.2466333648681647 Training Accuracy  15.637999992370606
+Test Loss 2.243752414703369 Test Accuracy  15.94
+Algo  fedavg  Round No.  2
+Training Loss  2.185609981384277 Training Accuracy  19.035999937653543
+Test Loss 2.181983911895752 Test Accuracy  19.36
+Algo  fedavg  Round No.  3
+Training Loss  2.12747122756958 Training Accuracy  23.31000000834465
+Test Loss 2.1238861328125 Test Accuracy  23.56
+Algo  fedavg  Round No.  4
+Training Loss  2.107094590606689 Training Accuracy  22.923999969959258
+Test Loss 2.1040131118774412 Test Accuracy  23.37
+Algo  fedavg  Round No.  5
+Training Loss  2.0857804902648938 Training Accuracy  25.398000018596647
+Test Loss 2.084251309967041 Test Accuracy  25.56
+Algo  fedavg  Round No.  6
+Training Loss  2.061232019805908 Training Accuracy  22.453999997377394
+Test Loss 2.0586046028137206 Test Accuracy  23.13
+Algo  fedavg  Round No.  7
+Training Loss  2.026343023376465 Training Accuracy  24.4739999628067
+Test Loss 2.0228463134765624 Test Accuracy  25.34
+Algo  fedavg  Round No.  8
+Training Loss  2.001404148712158 Training Accuracy  27.58000008583069
+Test Loss 1.9981653274536133 Test Accuracy  28.59
+Algo  fedavg  Round No.  9
+Training Loss  2.006692275772094 Training Accuracy  25.952000038623808
+Test Loss 2.002709716796875 Test Accuracy  26.41
+Algo  fedavg  Round No.  10
+Training Loss  1.9703395104980472 Training Accuracy  27.76200005054474
+Test Loss 1.9649491065979003 Test Accuracy  28.02
+Algo  fedavg  Round No.  11
+Training Loss  1.947526415557861 Training Accuracy  28.95200005531311
+Test Loss 1.9404408988952637 Test Accuracy  30.05
+Algo  fedavg  Round No.  12
+Training Loss  1.9364045004272454 Training Accuracy  28.96800012111664
+Test Loss 1.928660097503662 Test Accuracy  29.46
+Algo  fedavg  Round No.  13
+Training Loss  1.909974980163574 Training Accuracy  31.790000009536744
+Test Loss 1.9025872146606446 Test Accuracy  31.92
+Algo  fedavg  Round No.  14
+Training Loss  1.9048032363891598 Training Accuracy  30.92199993133545
+Test Loss 1.8975511222839356 Test Accuracy  31.27
+Algo  fedavg  Round No.  15
+Training Loss  1.8990517752838132 Training Accuracy  30.244000129699707
+Test Loss 1.8908825813293457 Test Accuracy  30.95
+Algo  fedavg  Round No.  16
+Training Loss  1.8978139499664317 Training Accuracy  29.879999966621398
+Test Loss 1.888828899383545 Test Accuracy  30.44
+Algo  fedavg  Round No.  17
+Training Loss  1.8749247837829592 Training Accuracy  30.942000093460084
+Test Loss 1.8653545272827148 Test Accuracy  31.47
+Algo  fedavg  Round No.  18
+Training Loss  1.8507157701110852 Training Accuracy  32.29400001525879
+Test Loss 1.840620555114746 Test Accuracy  32.75
+Algo  fedavg  Round No.  19
+Training Loss  1.8367625852966305 Training Accuracy  33.595999941825866
+Test Loss 1.8271797180175782 Test Accuracy  33.78
+Algo  fedavg  Round No.  20
+Training Loss  1.8281283644866944 Training Accuracy  34.37399991035461
+Test Loss 1.8187093070983886 Test Accuracy  34.95
+Algo  fedavg  Round No.  21
+Training Loss  1.8102416687011718 Training Accuracy  35.48200015068054
+Test Loss 1.8005974456787108 Test Accuracy  36.39
+Algo  fedavg  Round No.  22
+Training Loss  1.7914113267517087 Training Accuracy  36.39200002670288
+Test Loss 1.781190911102295 Test Accuracy  36.8
+Algo  fedavg  Round No.  23
+Training Loss  1.7908268605041509 Training Accuracy  35.92599996566773
+Test Loss 1.780774440765381 Test Accuracy  36.4
+Algo  fedavg  Round No.  24
+Training Loss  1.7800531707763674 Training Accuracy  36.44400011062622
+Test Loss 1.770544995880127 Test Accuracy  36.43
+Algo  fedavg  Round No.  25
+Training Loss  1.7607643518066398 Training Accuracy  36.81199998855591
+Test Loss 1.7505721099853515 Test Accuracy  36.94
+Algo  fedavg  Round No.  26
+Training Loss  1.7453922401428228 Training Accuracy  37.43200008392334
+Test Loss 1.7345914253234864 Test Accuracy  37.89
+Algo  fedavg  Round No.  27
+Training Loss  1.7681641109466546 Training Accuracy  35.414000034332275
+Test Loss 1.756244297027588 Test Accuracy  36.22
+Algo  fedavg  Round No.  28
+Training Loss  1.7336254762268064 Training Accuracy  37.06799994468689
+Test Loss 1.7234722145080565 Test Accuracy  37.77
+Algo  fedavg  Round No.  29
+Training Loss  1.726595190124512 Training Accuracy  37.51400007724762
+Test Loss 1.7162161491394043 Test Accuracy  37.98
+Algo  fedavg  Round No.  30
+Training Loss  1.709975738220215 Training Accuracy  37.51800018310547
+Test Loss 1.6995308624267578 Test Accuracy  37.65
+Algo  fedavg  Round No.  31
+Training Loss  1.7058780566406246 Training Accuracy  38.55599996566772
+Test Loss 1.6956741119384766 Test Accuracy  38.27
+Algo  fedavg  Round No.  32
+Training Loss  1.6825899807739255 Training Accuracy  38.97800013542175
+Test Loss 1.6726823844909668 Test Accuracy  39.39
+Algo  fedavg  Round No.  33
+Training Loss  1.675204560852051 Training Accuracy  39.51
+Test Loss 1.6656343154907227 Test Accuracy  40.08
+Algo  fedavg  Round No.  34
+Training Loss  1.668340227127075 Training Accuracy  40.0220001411438
+Test Loss 1.6588517303466797 Test Accuracy  40.51
+Algo  fedavg  Round No.  35
+Training Loss  1.661489927368164 Training Accuracy  39.98999998092651
+Test Loss 1.6523397117614746 Test Accuracy  40.62
+Algo  fedavg  Round No.  36
+Training Loss  1.6554946590423592 Training Accuracy  39.933999900817874
+Test Loss 1.6471069633483886 Test Accuracy  40.91
+Algo  fedavg  Round No.  37
+Training Loss  1.652444507217407 Training Accuracy  40.41399993896484
+Test Loss 1.6439266456604005 Test Accuracy  40.89
+Algo  fedavg  Round No.  38
+Training Loss  1.6386332147216793 Training Accuracy  41.05000011444092
+Test Loss 1.6303880821228027 Test Accuracy  41.3
+Algo  fedavg  Round No.  39
+Training Loss  1.6390050630950932 Training Accuracy  40.87400018692016
+Test Loss 1.6308887245178223 Test Accuracy  41.2
+Algo  fedavg  Round No.  40
+Training Loss  1.6210714870452885 Training Accuracy  41.81399993896484
+Test Loss 1.6115854232788085 Test Accuracy  42.34
+Algo  fedavg  Round No.  41
+Training Loss  1.6374224853515624 Training Accuracy  39.57400007247925
+Test Loss 1.6286560066223144 Test Accuracy  40.28
+Algo  fedavg  Round No.  42
+Training Loss  1.632851490859985 Training Accuracy  39.69200004577637
+Test Loss 1.6244787223815917 Test Accuracy  40.08
+Algo  fedavg  Round No.  43
+Training Loss  1.6181762451934818 Training Accuracy  40.43799999237061
+Test Loss 1.6096806549072267 Test Accuracy  41.22
+Algo  fedavg  Round No.  44
+Training Loss  1.6118356249237065 Training Accuracy  40.92399991035462
+Test Loss 1.602682290649414 Test Accuracy  41.5
+Algo  fedavg  Round No.  45
+Training Loss  1.595619114608765 Training Accuracy  42.46600008010864
+Test Loss 1.5869877437591553 Test Accuracy  43.12
+Algo  fedavg  Round No.  46
+Training Loss  1.58533490562439 Training Accuracy  43.37200016021728
+Test Loss 1.5771899436950683 Test Accuracy  43.63
+Algo  fedavg  Round No.  47
+Training Loss  1.579226930084229 Training Accuracy  43.263999996185305
+Test Loss 1.572064569091797 Test Accuracy  43.71
+Algo  fedavg  Round No.  48
+Training Loss  1.593538173675537 Training Accuracy  42.34599987030029
+Test Loss 1.58737544670105 Test Accuracy  42.82
+Algo  fedavg  Round No.  49
+Training Loss  1.5951333131408694 Training Accuracy  42.38399991989136
+Test Loss 1.588105158996582 Test Accuracy  42.64
+Algo  fedavg  Round No.  50
+Training Loss  1.5762793544006346 Training Accuracy  42.66199990272522
+Test Loss 1.5701505683898926 Test Accuracy  42.8
+Algo  fedavg  Round No.  51
+Training Loss  1.5879108940887456 Training Accuracy  41.752000179290775
+Test Loss 1.5807353332519531 Test Accuracy  41.76
+Algo  fedavg  Round No.  52
+Training Loss  1.557984682464599 Training Accuracy  43.687999877929684
+Test Loss 1.5509668560028076 Test Accuracy  43.79
+Algo  fedavg  Round No.  53
+Training Loss  1.5685616309356682 Training Accuracy  43.18400003433228
+Test Loss 1.56293480758667 Test Accuracy  43.29
+Algo  fedavg  Round No.  54
+Training Loss  1.542113552322387 Training Accuracy  44.51199977874756
+Test Loss 1.5353179733276368 Test Accuracy  44.8
+Algo  fedavg  Round No.  55
+Training Loss  1.5491960242462164 Training Accuracy  43.779999866485596
+Test Loss 1.5412092769622803 Test Accuracy  43.81
+Algo  fedavg  Round No.  56
+Training Loss  1.5453506586456291 Training Accuracy  43.677999877929686
+Test Loss 1.5392164562225341 Test Accuracy  44.08
+Algo  fedavg  Round No.  57
+Training Loss  1.536642822875977 Training Accuracy  44.44400001525879
+Test Loss 1.531305212020874 Test Accuracy  45.07
+Algo  fedavg  Round No.  58
+Training Loss  1.539828723526001 Training Accuracy  44.115999946594236
+Test Loss 1.5328601188659667 Test Accuracy  45.07
+Algo  fedavg  Round No.  59
+Training Loss  1.5609789154052731 Training Accuracy  43.871999988555906
+Test Loss 1.5560539600372314 Test Accuracy  44.42
+Algo  fedavg  Round No.  60
+Training Loss  1.5627724504089358 Training Accuracy  42.97199987411499
+Test Loss 1.5576447040557861 Test Accuracy  43.06
+Algo  fedavg  Round No.  61
+Training Loss  1.527459606170655 Training Accuracy  44.30200012207031
+Test Loss 1.5203968997955322 Test Accuracy  44.77
+Algo  fedavg  Round No.  62
+Training Loss  1.5187978959655766 Training Accuracy  44.4760000038147
+Test Loss 1.5105153392791748 Test Accuracy  45.27
+Algo  fedavg  Round No.  63
+Training Loss  1.4994196995544444 Training Accuracy  45.664000034332275
+Test Loss 1.4918997730255128 Test Accuracy  46.17
+Algo  fedavg  Round No.  64
+Training Loss  1.5047667824554438 Training Accuracy  45.08600004196167
+Test Loss 1.4972867630004882 Test Accuracy  45.8
+Algo  fedavg  Round No.  65
+Training Loss  1.5473523316955564 Training Accuracy  43.21800003051758
+Test Loss 1.539261270904541 Test Accuracy  43.72
+Algo  fedavg  Round No.  66
+Training Loss  1.5121090840148925 Training Accuracy  44.87400011062622
+Test Loss 1.5047488697052003 Test Accuracy  45.69
+Algo  fedavg  Round No.  67
+Training Loss  1.5014068489837649 Training Accuracy  45.33600004196167
+Test Loss 1.4949968639373779 Test Accuracy  45.84
+Algo  fedavg  Round No.  68
+Training Loss  1.49660699645996 Training Accuracy  45.75599988937378
+Test Loss 1.4919870887756348 Test Accuracy  46.5
+Algo  fedavg  Round No.  69
+Training Loss  1.4889387730407713 Training Accuracy  46.224000129699704
+Test Loss 1.4862527770996095 Test Accuracy  46.23
+Algo  fedavg  Round No.  70
+Training Loss  1.5098553281402587 Training Accuracy  45.085999984741214
+Test Loss 1.508483095550537 Test Accuracy  44.88
+Algo  fedavg  Round No.  71
+Training Loss  1.5044619763946532 Training Accuracy  44.99799993515015
+Test Loss 1.502262190246582 Test Accuracy  44.98
+Algo  fedavg  Round No.  72
+Training Loss  1.4782621748352054 Training Accuracy  46.49599990844727
+Test Loss 1.4758954383850098 Test Accuracy  46.76
+Algo  fedavg  Round No.  73
+Training Loss  1.4744463478851317 Training Accuracy  46.446000022888185
+Test Loss 1.4703412921905517 Test Accuracy  46.83
+Algo  fedavg  Round No.  74
+Training Loss  1.47458240196228 Training Accuracy  46.02999992370606
+Test Loss 1.4689164081573487 Test Accuracy  46.57
+Algo  fedavg  Round No.  75
+Training Loss  1.4944315069580083 Training Accuracy  45.21600008010864
+Test Loss 1.4889000896453857 Test Accuracy  45.66
+Algo  fedavg  Round No.  76
+Training Loss  1.464533453826904 Training Accuracy  46.5260001373291
+Test Loss 1.4600698760986328 Test Accuracy  46.8
+Algo  fedavg  Round No.  77
+Training Loss  1.4522481679534902 Training Accuracy  47.4320000076294
+Test Loss 1.450783722305298 Test Accuracy  48.21
+Algo  fedavg  Round No.  78
+Training Loss  1.4392408583831786 Training Accuracy  47.982000064849856
+Test Loss 1.4373749515533447 Test Accuracy  48.3
+Algo  fedavg  Round No.  79
+Training Loss  1.4367291904449464 Training Accuracy  47.933999919891356
+Test Loss 1.4330964683532714 Test Accuracy  48.38
+Algo  fedavg  Round No.  80
+Training Loss  1.4530199153137209 Training Accuracy  46.843999977111814
+Test Loss 1.4491233852386474 Test Accuracy  47.82
+Algo  fedavg  Round No.  81
+Training Loss  1.449336868286133 Training Accuracy  46.8380001449585
+Test Loss 1.4460381225585937 Test Accuracy  47.66
+Algo  fedavg  Round No.  82
+Training Loss  1.4416527645874027 Training Accuracy  47.27599998474121
+Test Loss 1.4400334064483642 Test Accuracy  48.17
+Algo  fedavg  Round No.  83
+Training Loss  1.4181271035003664 Training Accuracy  48.36799991607666
+Test Loss 1.417523878097534 Test Accuracy  49.03
+Algo  fedavg  Round No.  84
+Training Loss  1.4148250233459467 Training Accuracy  48.793999938964845
+Test Loss 1.412797561264038 Test Accuracy  49.19
+Algo  fedavg  Round No.  85
+Training Loss  1.4023235366821285 Training Accuracy  49.218000144958495
+Test Loss 1.4010851398468018 Test Accuracy  49.5
+Algo  fedavg  Round No.  86
+Training Loss  1.4048187998962398 Training Accuracy  49.081999969482425
+Test Loss 1.4060897171020508 Test Accuracy  49.12
+Algo  fedavg  Round No.  87
+Training Loss  1.4042789239501954 Training Accuracy  49.14000003814697
+Test Loss 1.4065373600006104 Test Accuracy  49.11
+Algo  fedavg  Round No.  88
+Training Loss  1.401716706314087 Training Accuracy  49.4119998550415
+Test Loss 1.403984172821045 Test Accuracy  49.75
+Algo  fedavg  Round No.  89
+Training Loss  1.3921245388793948 Training Accuracy  49.56199996948242
+Test Loss 1.3920781494140626 Test Accuracy  49.56
+Algo  fedavg  Round No.  90
+Training Loss  1.391610925216675 Training Accuracy  49.40999994277954
+Test Loss 1.3914548496246337 Test Accuracy  50.09
+Algo  fedavg  Round No.  91
+Training Loss  1.3965881732940675 Training Accuracy  49.4260000038147
+Test Loss 1.397904453277588 Test Accuracy  50.0
+Algo  fedavg  Round No.  92
+Training Loss  1.4000347705078127 Training Accuracy  49.474000244140626
+Test Loss 1.402396614074707 Test Accuracy  49.47
+Algo  fedavg  Round No.  93
+Training Loss  1.3902032469940186 Training Accuracy  49.33399995803833
+Test Loss 1.39210107421875 Test Accuracy  49.26
+Algo  fedavg  Round No.  94
+Training Loss  1.3803973767089845 Training Accuracy  49.72400009155273
+Test Loss 1.3818737812042237 Test Accuracy  50.06
+Algo  fedavg  Round No.  95
+Training Loss  1.3761308467102051 Training Accuracy  49.806000022888185
+Test Loss 1.3786305248260498 Test Accuracy  50.36
+Algo  fedavg  Round No.  96
+Training Loss  1.3687351593780515 Training Accuracy  50.15
+Test Loss 1.3716946758270263 Test Accuracy  50.77
+Algo  fedavg  Round No.  97
+Training Loss  1.3617523320007325 Training Accuracy  50.66799991607666
+Test Loss 1.365281819152832 Test Accuracy  50.44
+Algo  fedavg  Round No.  98
+Training Loss  1.3588289012908938 Training Accuracy  50.5279999923706
+Test Loss 1.36262208442688 Test Accuracy  50.81
+Algo  fedavg  Round No.  99
+Training Loss  1.355274203567505 Training Accuracy  50.621999969482424
+Test Loss 1.3577332054138183 Test Accuracy  50.64
+Algo  fedavg  Round No.  100
+Training Loss  1.3633287714385987 Training Accuracy  50.276000003814694
+Test Loss 1.3662790985107423 Test Accuracy  50.3
+Algo  fedavg  Round No.  101
+Training Loss  1.3640298540496827 Training Accuracy  50.41600011825562
+Test Loss 1.369933846282959 Test Accuracy  50.44
+Algo  fedavg  Round No.  102
+Training Loss  1.3736886310577392 Training Accuracy  49.89600008010864
+Test Loss 1.379837883758545 Test Accuracy  49.52
+Algo  fedavg  Round No.  103
+Training Loss  1.352001840362548 Training Accuracy  50.87600006103516
+Test Loss 1.357766399383545 Test Accuracy  50.95
+Algo  fedavg  Round No.  104
+Training Loss  1.3534130178070063 Training Accuracy  50.39799999237061
+Test Loss 1.35840299949646 Test Accuracy  50.96
+Algo  fedavg  Round No.  105
+Training Loss  1.346416497344971 Training Accuracy  50.87200010299683
+Test Loss 1.3507432075500487 Test Accuracy  51.12
+Algo  fedavg  Round No.  106
+Training Loss  1.3402468452453618 Training Accuracy  51.13200016021729
+Test Loss 1.3453549327850343 Test Accuracy  51.1
+Algo  fedavg  Round No.  107
+Training Loss  1.332584490585327 Training Accuracy  51.60599990844727
+Test Loss 1.3389955810546874 Test Accuracy  51.21
+Algo  fedavg  Round No.  108
+Training Loss  1.3325906678009036 Training Accuracy  51.69599979400635
+Test Loss 1.3392037425994874 Test Accuracy  51.65
+Algo  fedavg  Round No.  109
+Training Loss  1.3428835375213621 Training Accuracy  51.371999969482424
+Test Loss 1.3493926189422607 Test Accuracy  50.91
+Algo  fedavg  Round No.  110
+Training Loss  1.320915637359619 Training Accuracy  52.10199996948242
+Test Loss 1.3269009353637695 Test Accuracy  52.25
+Algo  fedavg  Round No.  111
+Training Loss  1.3215097522735595 Training Accuracy  52.15000003814697
+Test Loss 1.3275805339813231 Test Accuracy  52.08
+Algo  fedavg  Round No.  112
+Training Loss  1.3159763279724124 Training Accuracy  52.14400009155273
+Test Loss 1.3239645404815674 Test Accuracy  51.79
+Algo  fedavg  Round No.  113
+Training Loss  1.3257432838439942 Training Accuracy  51.54800018310547
+Test Loss 1.3339742321014405 Test Accuracy  51.22
+Algo  fedavg  Round No.  114
+Training Loss  1.3107002964019776 Training Accuracy  52.542000160217285
+Test Loss 1.316629563140869 Test Accuracy  51.82
+Algo  fedavg  Round No.  115
+Training Loss  1.3056882671356194 Training Accuracy  52.59200008392334
+Test Loss 1.3117079395294189 Test Accuracy  52.43
+Algo  fedavg  Round No.  116
+Training Loss  1.307677807388306 Training Accuracy  52.35600004196167
+Test Loss 1.3153674613952637 Test Accuracy  51.88
+Algo  fedavg  Round No.  117
+Training Loss  1.3056413412475587 Training Accuracy  52.005999908447265
+Test Loss 1.3152401908874511 Test Accuracy  51.71
+Algo  fedavg  Round No.  118
+Training Loss  1.3100907813262939 Training Accuracy  52.1860001373291
+Test Loss 1.3214232543945312 Test Accuracy  51.89
+Algo  fedavg  Round No.  119
+Training Loss  1.2982374379730226 Training Accuracy  52.86799987792969
+Test Loss 1.309228565979004 Test Accuracy  52.89
+Algo  fedavg  Round No.  120
+Training Loss  1.3006753115081786 Training Accuracy  52.643999900817875
+Test Loss 1.309647802734375 Test Accuracy  52.75
+Algo  fedavg  Round No.  121
+Training Loss  1.2986001109313963 Training Accuracy  52.667999839782716
+Test Loss 1.3087353942871094 Test Accuracy  52.59
+Algo  fedavg  Round No.  122
+Training Loss  1.279662943725586 Training Accuracy  53.69800006866455
+Test Loss 1.290704761505127 Test Accuracy  53.72
+Algo  fedavg  Round No.  123
+Training Loss  1.2782510913085943 Training Accuracy  53.70999992370606
+Test Loss 1.2876369758605957 Test Accuracy  53.5
+Algo  fedavg  Round No.  124
+Training Loss  1.2937886895751955 Training Accuracy  52.75999984741211
+Test Loss 1.303107279586792 Test Accuracy  52.43
+Algo  fedavg  Round No.  125
+Training Loss  1.3030774466705322 Training Accuracy  52.65000015258789
+Test Loss 1.3135462852478028 Test Accuracy  52.55
+Algo  fedavg  Round No.  126
+Training Loss  1.295640138244629 Training Accuracy  52.88199996948242
+Test Loss 1.306644588470459 Test Accuracy  53.09
+Algo  fedavg  Round No.  127
+Training Loss  1.2653205098724363 Training Accuracy  54.208000106811525
+Test Loss 1.2777637741088868 Test Accuracy  54.05
+Algo  fedavg  Round No.  128
+Training Loss  1.2780230432128905 Training Accuracy  53.72599992752075
+Test Loss 1.2911456912994386 Test Accuracy  53.24
+Algo  fedavg  Round No.  129
+Training Loss  1.2626877619934083 Training Accuracy  54.37399974822998
+Test Loss 1.2741791175842285 Test Accuracy  53.98
+Algo  fedavg  Round No.  130
+Training Loss  1.2528940534210202 Training Accuracy  54.80799995422363
+Test Loss 1.2653056674957275 Test Accuracy  54.23
+Algo  fedavg  Round No.  131
+Training Loss  1.245489478302002 Training Accuracy  54.98200012207031
+Test Loss 1.259667484664917 Test Accuracy  54.4
+Algo  fedavg  Round No.  132
+Training Loss  1.2563762571716304 Training Accuracy  54.44599983215332
+Test Loss 1.2705753101348878 Test Accuracy  53.76
+Algo  fedavg  Round No.  133
+Training Loss  1.2814464358520512 Training Accuracy  53.643999938964846
+Test Loss 1.296632953262329 Test Accuracy  53.08
+Algo  fedavg  Round No.  134
+Training Loss  1.2727686250686643 Training Accuracy  53.892000160217286
+Test Loss 1.288547777557373 Test Accuracy  53.32
+Algo  fedavg  Round No.  135
+Training Loss  1.2442223283004765 Training Accuracy  55.05399995803833
+Test Loss 1.2603252380371093 Test Accuracy  54.6
+Algo  fedavg  Round No.  136
+Training Loss  1.2389592212677005 Training Accuracy  55.28399993896485
+Test Loss 1.2553768157958984 Test Accuracy  54.8
+Algo  fedavg  Round No.  137
+Training Loss  1.235788649024963 Training Accuracy  55.164000053405765
+Test Loss 1.2500922744750977 Test Accuracy  54.79
+Algo  fedavg  Round No.  138
+Training Loss  1.23402611579895 Training Accuracy  55.21399993896485
+Test Loss 1.247335419845581 Test Accuracy  55.19
+Algo  fedavg  Round No.  139
+Training Loss  1.2340135435485846 Training Accuracy  55.386000061035155
+Test Loss 1.2499742439270018 Test Accuracy  54.99
+Algo  fedavg  Round No.  140
+Training Loss  1.241897706069946 Training Accuracy  54.97400001525879
+Test Loss 1.2559373233795166 Test Accuracy  54.8
+Algo  fedavg  Round No.  141
+Training Loss  1.2624918831634522 Training Accuracy  54.01800018310547
+Test Loss 1.2735357837677002 Test Accuracy  53.77
+Algo  fedavg  Round No.  142
+Training Loss  1.240063366127014 Training Accuracy  54.97599983215332
+Test Loss 1.2547856483459472 Test Accuracy  54.71
+Algo  fedavg  Round No.  143
+Training Loss  1.2245736232376105 Training Accuracy  55.58600006103516
+Test Loss 1.2421534259796143 Test Accuracy  54.73
+Algo  fedavg  Round No.  144
+Training Loss  1.2123424938201908 Training Accuracy  56.155999946594235
+Test Loss 1.229461170578003 Test Accuracy  55.6
+Algo  fedavg  Round No.  145
+Training Loss  1.2094196610260008 Training Accuracy  56.114000129699704
+Test Loss 1.2267113746643066 Test Accuracy  55.48
+Algo  fedavg  Round No.  146
+Training Loss  1.2156648896026616 Training Accuracy  55.98800006866455
+Test Loss 1.2337556133270264 Test Accuracy  55.62
+Algo  fedavg  Round No.  147
+Training Loss  1.220918829269409 Training Accuracy  56.22800003051758
+Test Loss 1.2390283866882323 Test Accuracy  55.57
+Algo  fedavg  Round No.  148
+Training Loss  1.2109455429840086 Training Accuracy  56.32999996185303
+Test Loss 1.2292774318695068 Test Accuracy  55.55
+Algo  fedavg  Round No.  149
+Training Loss  1.2151132835769656 Training Accuracy  55.86399990081787
+Test Loss 1.2346457489013671 Test Accuracy  55.01
+Algo  fedavg  Round No.  150
+Training Loss  1.204395738296509 Training Accuracy  56.31599998474121
+Test Loss 1.2238999183654786 Test Accuracy  55.51
+Algo  fedavg  Round No.  151
+Training Loss  1.1885775803756717 Training Accuracy  57.180000381469725
+Test Loss 1.2072077590942383 Test Accuracy  56.35
+Algo  fedavg  Round No.  152
+Training Loss  1.1849749735260007 Training Accuracy  57.24599975585937
+Test Loss 1.2045626426696778 Test Accuracy  56.47
+Algo  fedavg  Round No.  153
+Training Loss  1.195759307212829 Training Accuracy  56.651999969482425
+Test Loss 1.2141081218719483 Test Accuracy  56.06
+Algo  fedavg  Round No.  154
+Training Loss  1.195717617225647 Training Accuracy  56.79
+Test Loss 1.2141876132965088 Test Accuracy  56.03
+Algo  fedavg  Round No.  155
+Training Loss  1.1777710646820072 Training Accuracy  57.73400012969971
+Test Loss 1.1964326240539551 Test Accuracy  56.86
+Algo  fedavg  Round No.  156
+Training Loss  1.1946685194396975 Training Accuracy  56.55
+Test Loss 1.2123594844818115 Test Accuracy  55.57
+Algo  fedavg  Round No.  157
+Training Loss  1.178809238815307 Training Accuracy  57.36200019836426
+Test Loss 1.1970885524749755 Test Accuracy  56.72
+Algo  fedavg  Round No.  158
+Training Loss  1.161805738830566 Training Accuracy  58.22200012207031
+Test Loss 1.1823021537780762 Test Accuracy  57.52
+Algo  fedavg  Round No.  159
+Training Loss  1.1572636174774167 Training Accuracy  58.41999965667725
+Test Loss 1.1795646770477295 Test Accuracy  57.55
+Algo  fedavg  Round No.  160
+Training Loss  1.183298488922119 Training Accuracy  57.12600040435791
+Test Loss 1.2036316360473633 Test Accuracy  56.87
+Algo  fedavg  Round No.  161
+Training Loss  1.1718860998916627 Training Accuracy  57.81599994659424
+Test Loss 1.194228228378296 Test Accuracy  57.42
+Algo  fedavg  Round No.  162
+Training Loss  1.1572410639572142 Training Accuracy  58.56799991607666
+Test Loss 1.1816362365722657 Test Accuracy  58.09
+Algo  fedavg  Round No.  163
+Training Loss  1.1627655189895636 Training Accuracy  58.47400001525879
+Test Loss 1.1846218673706055 Test Accuracy  57.55
+Algo  fedavg  Round No.  164
+Training Loss  1.169695436782837 Training Accuracy  57.963999862670896
+Test Loss 1.1914307472229004 Test Accuracy  57.28
+Algo  fedavg  Round No.  165
+Training Loss  1.1701572381973264 Training Accuracy  57.594000034332275
+Test Loss 1.1926259700775146 Test Accuracy  57.18
+Algo  fedavg  Round No.  166
+Training Loss  1.168391900062561 Training Accuracy  58.0119998550415
+Test Loss 1.1885448703765868 Test Accuracy  57.71
+Algo  fedavg  Round No.  167
+Training Loss  1.1681039765548704 Training Accuracy  57.89599994659424
+Test Loss 1.1889982173919678 Test Accuracy  57.45
+Algo  fedavg  Round No.  168
+Training Loss  1.1545395292663574 Training Accuracy  58.31199996948242
+Test Loss 1.176926319885254 Test Accuracy  57.74
+Algo  fedavg  Round No.  169
+Training Loss  1.1457357227706906 Training Accuracy  58.74799976348877
+Test Loss 1.1694784656524657 Test Accuracy  58.21
+Algo  fedavg  Round No.  170
+Training Loss  1.1473230693435668 Training Accuracy  58.73599998474121
+Test Loss 1.1711174396514892 Test Accuracy  58.25
+Algo  fedavg  Round No.  171
+Training Loss  1.1541230817413328 Training Accuracy  58.566000061035155
+Test Loss 1.1768182594299317 Test Accuracy  57.7
+Algo  fedavg  Round No.  172
+Training Loss  1.120866937675476 Training Accuracy  59.850000076293945
+Test Loss 1.1454849250793457 Test Accuracy  58.98
+Algo  fedavg  Round No.  173
+Training Loss  1.1291393643951417 Training Accuracy  59.469999923706055
+Test Loss 1.154065297317505 Test Accuracy  58.68
+Algo  fedavg  Round No.  174
+Training Loss  1.1233400149536135 Training Accuracy  59.734000053405765
+Test Loss 1.1472709392547606 Test Accuracy  59.31
+Algo  fedavg  Round No.  175
+Training Loss  1.1298863901138307 Training Accuracy  59.475999908447264
+Test Loss 1.1567898067474365 Test Accuracy  58.99
+Algo  fedavg  Round No.  176
+Training Loss  1.1183763389205934 Training Accuracy  59.782000122070315
+Test Loss 1.144933716583252 Test Accuracy  59.22
+Algo  fedavg  Round No.  177
+Training Loss  1.1220918563079831 Training Accuracy  59.63399990081787
+Test Loss 1.1444009914398194 Test Accuracy  58.98
+Algo  fedavg  Round No.  178
+Training Loss  1.1206691054916385 Training Accuracy  59.65199981689453
+Test Loss 1.1415984851837158 Test Accuracy  58.93
+Algo  fedavg  Round No.  179
+Training Loss  1.1283590326309203 Training Accuracy  59.65600006103516
+Test Loss 1.1505162776947022 Test Accuracy  58.69
+Algo  fedavg  Round No.  180
+Training Loss  1.1291396205520627 Training Accuracy  59.36399997711182
+Test Loss 1.1539038314819337 Test Accuracy  58.51
+Algo  fedavg  Round No.  181
+Training Loss  1.1084949764251706 Training Accuracy  60.32199993133545
+Test Loss 1.1356542835235595 Test Accuracy  59.8
+Algo  fedavg  Round No.  182
+Training Loss  1.10905547996521 Training Accuracy  60.26599983215332
+Test Loss 1.13542264251709 Test Accuracy  59.61
+Algo  fedavg  Round No.  183
+Training Loss  1.123503824272156 Training Accuracy  59.6379999923706
+Test Loss 1.1476071273803712 Test Accuracy  58.84
+Algo  fedavg  Round No.  184
+Training Loss  1.1123664930343622 Training Accuracy  60.070000190734866
+Test Loss 1.1377107666015625 Test Accuracy  59.29
+Algo  fedavg  Round No.  185
+Training Loss  1.1149306602478026 Training Accuracy  59.771999740600585
+Test Loss 1.143551634979248 Test Accuracy  59.14
+Algo  fedavg  Round No.  186
+Training Loss  1.107250017967224 Training Accuracy  60.07200000762939
+Test Loss 1.1355795597076417 Test Accuracy  59.69
+Algo  fedavg  Round No.  187
+Training Loss  1.107165265846252 Training Accuracy  60.0779998588562
+Test Loss 1.1366143325805664 Test Accuracy  59.65
+Algo  fedavg  Round No.  188
+Training Loss  1.1155187626266483 Training Accuracy  59.865999965667726
+Test Loss 1.1485996143341064 Test Accuracy  59.18
+Algo  fedavg  Round No.  189
+Training Loss  1.0927566547012326 Training Accuracy  60.72400001525879
+Test Loss 1.1242395111083985 Test Accuracy  60.01
+Algo  fedavg  Round No.  190
+Training Loss  1.0846105719757082 Training Accuracy  61.11799983978271
+Test Loss 1.11477744140625 Test Accuracy  60.64
+Algo  fedavg  Round No.  191
+Training Loss  1.0806088154983522 Training Accuracy  61.06400001525879
+Test Loss 1.1122806392669677 Test Accuracy  60.68
+Algo  fedavg  Round No.  192
+Training Loss  1.076759779090881 Training Accuracy  61.34799987792969
+Test Loss 1.1072184288024902 Test Accuracy  60.62
+Algo  fedavg  Round No.  193
+Training Loss  1.0801644158554078 Training Accuracy  61.248000144958496
+Test Loss 1.1092398830413819 Test Accuracy  60.41
+Algo  fedavg  Round No.  194
+Training Loss  1.066179288825989 Training Accuracy  61.66600009918213
+Test Loss 1.095802028656006 Test Accuracy  61.09
+Algo  fedavg  Round No.  195
+Training Loss  1.0589298463821413 Training Accuracy  61.90800010681152
+Test Loss 1.0892552150726318 Test Accuracy  61.42
+Algo  fedavg  Round No.  196
+Training Loss  1.0641331969070436 Training Accuracy  61.49399993896484
+Test Loss 1.0942973136901855 Test Accuracy  60.98
+Algo  fedavg  Round No.  197
+Training Loss  1.069510669441223 Training Accuracy  61.739999771118164
+Test Loss 1.0996896213531495 Test Accuracy  61.15
+Algo  fedavg  Round No.  198
+Training Loss  1.0632960958862305 Training Accuracy  61.930000152587894
+Test Loss 1.0932393112182617 Test Accuracy  60.98
+Algo  fedavg  Round No.  199
+Training Loss  1.073599972419739 Training Accuracy  61.21000003814697
+Test Loss 1.1044457035064696 Test Accuracy  60.39
+Algo  fedavg  Round No.  200
+Training Loss  1.056070842132568 Training Accuracy  62.00200000762939
+Test Loss 1.0881598258972167 Test Accuracy  61.66
+Algo  fedavg  Round No.  201
+Training Loss  1.0531354560470583 Training Accuracy  61.96000022888184
+Test Loss 1.083684450531006 Test Accuracy  61.67
+Algo  fedavg  Round No.  202
+Training Loss  1.04709584651947 Training Accuracy  62.40600006103516
+Test Loss 1.0801865539550781 Test Accuracy  62.28
+Algo  fedavg  Round No.  203
+Training Loss  1.0571302609634399 Training Accuracy  62.2439998626709
+Test Loss 1.0893095329284668 Test Accuracy  61.79
+Algo  fedavg  Round No.  204
+Training Loss  1.0594283723449704 Training Accuracy  62.132000045776365
+Test Loss 1.0895632308959962 Test Accuracy  61.57
+Algo  fedavg  Round No.  205
+Training Loss  1.0513907240676876 Training Accuracy  62.36200012207031
+Test Loss 1.084403311920166 Test Accuracy  62.03
+Algo  fedavg  Round No.  206
+Training Loss  1.0405212605667113 Training Accuracy  62.681999855041504
+Test Loss 1.0750077167510987 Test Accuracy  62.15
+Algo  fedavg  Round No.  207
+Training Loss  1.0389987411880492 Training Accuracy  62.82800003051758
+Test Loss 1.072853914642334 Test Accuracy  62.48
+Algo  fedavg  Round No.  208
+Training Loss  1.050728748931885 Training Accuracy  62.47399978637695
+Test Loss 1.0821962211608886 Test Accuracy  62.07
+Algo  fedavg  Round No.  209
+Training Loss  1.0430871131515507 Training Accuracy  62.795999946594236
+Test Loss 1.0749074619293213 Test Accuracy  62.27
+Algo  fedavg  Round No.  210
+Training Loss  1.0282289823150637 Training Accuracy  63.10000026702881
+Test Loss 1.061969613647461 Test Accuracy  62.86
+Algo  fedavg  Round No.  211
+Training Loss  1.0233070306396483 Training Accuracy  63.32999996185303
+Test Loss 1.0584076873779298 Test Accuracy  62.89
+Algo  fedavg  Round No.  212
+Training Loss  1.0338946640014646 Training Accuracy  62.84799991607666
+Test Loss 1.0711181587219238 Test Accuracy  62.31
+Algo  fedavg  Round No.  213
+Training Loss  1.0266803131866453 Training Accuracy  63.18599998474121
+Test Loss 1.065523783493042 Test Accuracy  62.4
+Algo  fedavg  Round No.  214
+Training Loss  1.0254780770111085 Training Accuracy  63.08599979400635
+Test Loss 1.0632648849487305 Test Accuracy  62.06
+Algo  fedavg  Round No.  215
+Training Loss  1.0218265636062627 Training Accuracy  63.4160001373291
+Test Loss 1.0567028663635254 Test Accuracy  62.72
+Algo  fedavg  Round No.  216
+Training Loss  1.02006823097229 Training Accuracy  63.573999938964846
+Test Loss 1.0550921321868896 Test Accuracy  62.82
+Algo  fedavg  Round No.  217
+Training Loss  1.0145566511535646 Training Accuracy  63.70400001525879
+Test Loss 1.0503392921447754 Test Accuracy  62.78
+Algo  fedavg  Round No.  218
+Training Loss  1.0215868793869018 Training Accuracy  63.39400024414063
+Test Loss 1.057739994430542 Test Accuracy  62.66
+Algo  fedavg  Round No.  219
+Training Loss  1.0397087307739257 Training Accuracy  62.8199995803833
+Test Loss 1.074962520980835 Test Accuracy  62.0
+Algo  fedavg  Round No.  220
+Training Loss  1.0162506182861324 Training Accuracy  63.61600006103516
+Test Loss 1.05349474067688 Test Accuracy  63.16
+Algo  fedavg  Round No.  221
+Training Loss  1.0117461666488645 Training Accuracy  63.69199993133545
+Test Loss 1.050575445175171 Test Accuracy  62.92
+Algo  fedavg  Round No.  222
+Training Loss  1.0007901905059817 Training Accuracy  64.2580001449585
+Test Loss 1.0368959777832032 Test Accuracy  63.57
+Algo  fedavg  Round No.  223
+Training Loss  1.0022056253433231 Training Accuracy  64.06399993896484
+Test Loss 1.0398809703826903 Test Accuracy  63.16
+Algo  fedavg  Round No.  224
+Training Loss  0.9985277453613278 Training Accuracy  64.23200004577637
+Test Loss 1.0361602165222168 Test Accuracy  63.44
+Algo  fedavg  Round No.  225
+Training Loss  1.0065777291107174 Training Accuracy  63.75599994659424
+Test Loss 1.0452601612091064 Test Accuracy  62.7
+Algo  fedavg  Round No.  226
+Training Loss  0.9891387065887451 Training Accuracy  64.7100001525879
+Test Loss 1.0284579677581787 Test Accuracy  63.65
+Algo  fedavg  Round No.  227
+Training Loss  0.9879003321838379 Training Accuracy  64.6000001525879
+Test Loss 1.0250987648010255 Test Accuracy  63.78
+Algo  fedavg  Round No.  228
+Training Loss  0.989449461479187 Training Accuracy  64.57599983215331
+Test Loss 1.0265088214874267 Test Accuracy  63.68
+Algo  fedavg  Round No.  229
+Training Loss  0.9923320570755003 Training Accuracy  64.37599998474121
+Test Loss 1.0278653877258301 Test Accuracy  63.77
+Algo  fedavg  Round No.  230
+Training Loss  1.002116269226074 Training Accuracy  63.94600006103516
+Test Loss 1.0362070980072022 Test Accuracy  62.82
+Algo  fedavg  Round No.  231
+Training Loss  0.9838110240554809 Training Accuracy  64.76200016021728
+Test Loss 1.0215997035980224 Test Accuracy  63.67
+Algo  fedavg  Round No.  232
+Training Loss  0.9845080731964109 Training Accuracy  64.63400005340576
+Test Loss 1.0246679973602295 Test Accuracy  63.86
+Algo  fedavg  Round No.  233
+Training Loss  0.9903027214050288 Training Accuracy  64.49199989318848
+Test Loss 1.0300439476013183 Test Accuracy  63.62
+Algo  fedavg  Round No.  234
+Training Loss  0.985096585655212 Training Accuracy  64.59399997711182
+Test Loss 1.0230906578063965 Test Accuracy  63.94
+Algo  fedavg  Round No.  235
+Training Loss  0.9968731308746335 Training Accuracy  64.03799987792969
+Test Loss 1.0337078468322753 Test Accuracy  62.98
+Algo  fedavg  Round No.  236
+Training Loss  0.971525676383972 Training Accuracy  65.42200012207032
+Test Loss 1.0109479917526245 Test Accuracy  64.74
+Algo  fedavg  Round No.  237
+Training Loss  0.9645609280395507 Training Accuracy  65.56000003814697
+Test Loss 1.0057840797424316 Test Accuracy  64.66
+Algo  fedavg  Round No.  238
+Training Loss  0.9737504249191282 Training Accuracy  65.06000007629395
+Test Loss 1.0141290901184081 Test Accuracy  64.1
+Algo  fedavg  Round No.  239
+Training Loss  0.9603389992141725 Training Accuracy  65.63200016021729
+Test Loss 1.0022146297454835 Test Accuracy  64.47
+Algo  fedavg  Round No.  240
+Training Loss  0.9559731703567502 Training Accuracy  66.0079999923706
+Test Loss 0.9985172443389893 Test Accuracy  64.91
+Algo  fedavg  Round No.  241
+Training Loss  0.9695265918731689 Training Accuracy  65.15400016784668
+Test Loss 1.011087091445923 Test Accuracy  64.37
+Algo  fedavg  Round No.  242
+Training Loss  0.9696400137710574 Training Accuracy  65.19600017547607
+Test Loss 1.011695457458496 Test Accuracy  64.02
+Algo  fedavg  Round No.  243
+Training Loss  0.9739110198974608 Training Accuracy  64.94799976348877
+Test Loss 1.0165838188171388 Test Accuracy  64.1
+Algo  fedavg  Round No.  244
+Training Loss  0.978339213294983 Training Accuracy  64.94600013732911
+Test Loss 1.0192547637939453 Test Accuracy  64.13
+Algo  fedavg  Round No.  245
+Training Loss  0.979590936660767 Training Accuracy  65.27199981689454
+Test Loss 1.0183991758346558 Test Accuracy  64.02
+Algo  fedavg  Round No.  246
+Training Loss  0.951491722679138 Training Accuracy  66.09800010681153
+Test Loss 0.9924015266418457 Test Accuracy  64.9
+Algo  fedavg  Round No.  247
+Training Loss  0.9479130367279055 Training Accuracy  66.05600002288818
+Test Loss 0.9933958324432373 Test Accuracy  64.89
+Algo  fedavg  Round No.  248
+Training Loss  0.9402638446044922 Training Accuracy  66.28399997711182
+Test Loss 0.9853806076049805 Test Accuracy  65.29
+Algo  fedavg  Round No.  249
+Training Loss  0.9398960574340814 Training Accuracy  66.26600021362304
+Test Loss 0.983537990951538 Test Accuracy  65.65
+Algo  fedavg  Round No.  250
+Training Loss  0.9521201998901371 Training Accuracy  65.68999996185303
+Test Loss 0.9952420028686524 Test Accuracy  64.74
+Algo  fedavg  Round No.  251
+Training Loss  0.9468361114501956 Training Accuracy  65.85799987792969
+Test Loss 0.9896406351089477 Test Accuracy  65.09
+Algo  fedavg  Round No.  252
+Training Loss  0.9495859637832637 Training Accuracy  65.94799987792969
+Test Loss 0.9921840808868408 Test Accuracy  65.02
+Algo  fedavg  Round No.  253
+Training Loss  0.9377231266021728 Training Accuracy  66.42
+Test Loss 0.98195876121521 Test Accuracy  65.33
+Algo  fedavg  Round No.  254
+Training Loss  0.9323197136306763 Training Accuracy  66.73799983978272
+Test Loss 0.9748968978881836 Test Accuracy  65.84
+Algo  fedavg  Round No.  255
+Training Loss  0.9498863086318973 Training Accuracy  66.07400024414062
+Test Loss 0.9895697872161865 Test Accuracy  65.24
+Algo  fedavg  Round No.  256
+Training Loss  0.9489738637161254 Training Accuracy  66.21799983978272
+Test Loss 0.9900723983764649 Test Accuracy  65.07
+Algo  fedavg  Round No.  257
+Training Loss  0.9379889065933226 Training Accuracy  66.63799995422363
+Test Loss 0.9802024461746216 Test Accuracy  65.48
+Algo  fedavg  Round No.  258
+Training Loss  0.9270772774505616 Training Accuracy  66.99599975585937
+Test Loss 0.970686071395874 Test Accuracy  65.59
+Algo  fedavg  Round No.  259
+Training Loss  0.9365251575088501 Training Accuracy  66.79799983978272
+Test Loss 0.9831356773376465 Test Accuracy  65.17
+Algo  fedavg  Round No.  260
+Training Loss  0.9224682320022584 Training Accuracy  67.0520002746582
+Test Loss 0.969665523147583 Test Accuracy  66.13
+Algo  fedavg  Round No.  261
+Training Loss  0.9256132699584962 Training Accuracy  66.86800022125244
+Test Loss 0.9728825183868408 Test Accuracy  66.03
+Algo  fedavg  Round No.  262
+Training Loss  0.9184218575668338 Training Accuracy  67.1740002822876
+Test Loss 0.965121850013733 Test Accuracy  66.07
+Algo  fedavg  Round No.  263
+Training Loss  0.9168668850326539 Training Accuracy  67.27199996948242
+Test Loss 0.9607785106658936 Test Accuracy  66.08
+Algo  fedavg  Round No.  264
+Training Loss  0.9301879027175898 Training Accuracy  66.7720000076294
+Test Loss 0.9740860172271728 Test Accuracy  65.2
+Algo  fedavg  Round No.  265
+Training Loss  0.9201948652648927 Training Accuracy  67.18400012969971
+Test Loss 0.9644017139434814 Test Accuracy  66.11
+Algo  fedavg  Round No.  266
+Training Loss  0.9202805630874638 Training Accuracy  67.0720004272461
+Test Loss 0.9676005123138428 Test Accuracy  65.8
+Algo  fedavg  Round No.  267
+Training Loss  0.9259747175025939 Training Accuracy  66.80599960327149
+Test Loss 0.9750209150314331 Test Accuracy  65.72
+Algo  fedavg  Round No.  268
+Training Loss  0.9153050188064578 Training Accuracy  67.48200016021728
+Test Loss 0.9610688753128052 Test Accuracy  66.25
+Algo  fedavg  Round No.  269
+Training Loss  0.904904191131592 Training Accuracy  67.88799987792969
+Test Loss 0.9511982006072998 Test Accuracy  66.66
+Algo  fedavg  Round No.  270
+Training Loss  0.915270414657593 Training Accuracy  67.3740002822876
+Test Loss 0.9631787706375122 Test Accuracy  65.99
+Algo  fedavg  Round No.  271
+Training Loss  0.9280327617263793 Training Accuracy  66.82200008392334
+Test Loss 0.9776608961105346 Test Accuracy  65.49
+Algo  fedavg  Round No.  272
+Training Loss  0.9102449734115603 Training Accuracy  67.5219998550415
+Test Loss 0.9598092205047607 Test Accuracy  66.47
+Algo  fedavg  Round No.  273
+Training Loss  0.8949238779067986 Training Accuracy  68.17400001525878
+Test Loss 0.9443478080749512 Test Accuracy  67.27
+Algo  fedavg  Round No.  274
+Training Loss  0.8938149269485475 Training Accuracy  68.20600021362304
+Test Loss 0.9426034261703491 Test Accuracy  67.22
+Algo  fedavg  Round No.  275
+Training Loss  0.9157280660629274 Training Accuracy  67.26599952697754
+Test Loss 0.9647553234100342 Test Accuracy  66.29
+Algo  fedavg  Round No.  276
+Training Loss  0.900681945953369 Training Accuracy  68.02999973297119
+Test Loss 0.950424455833435 Test Accuracy  67.0
+Algo  fedavg  Round No.  277
+Training Loss  0.9006292842102047 Training Accuracy  67.8579997253418
+Test Loss 0.9486610095977783 Test Accuracy  66.48
+Algo  fedavg  Round No.  278
+Training Loss  0.9104342230415342 Training Accuracy  67.43599994659424
+Test Loss 0.9576090160369873 Test Accuracy  66.23
+Algo  fedavg  Round No.  279
+Training Loss  0.9144106367111207 Training Accuracy  67.31999988555908
+Test Loss 0.962045246887207 Test Accuracy  66.13
+Algo  fedavg  Round No.  280
+Training Loss  0.8894444332885747 Training Accuracy  68.39799964904785
+Test Loss 0.9370582698822022 Test Accuracy  67.11
+Algo  fedavg  Round No.  281
+Training Loss  0.8856003189849859 Training Accuracy  68.49599975585937
+Test Loss 0.9346138652801513 Test Accuracy  67.52
+Algo  fedavg  Round No.  282
+Training Loss  0.9016467568969725 Training Accuracy  67.85599971771241
+Test Loss 0.9526448844909668 Test Accuracy  66.85
+Algo  fedavg  Round No.  283
+Training Loss  0.9014108851432796 Training Accuracy  67.87199954986572
+Test Loss 0.9506167388916016 Test Accuracy  66.68
+Algo  fedavg  Round No.  284
+Training Loss  0.9006388323974608 Training Accuracy  67.97199977874756
+Test Loss 0.9496199113845826 Test Accuracy  66.92
+Algo  fedavg  Round No.  285
+Training Loss  0.8886812422561645 Training Accuracy  68.41799995422363
+Test Loss 0.9402579879760742 Test Accuracy  67.28
+Algo  fedavg  Round No.  286
+Training Loss  0.8768254455566405 Training Accuracy  68.68199981689453
+Test Loss 0.9276949409484864 Test Accuracy  67.23
+Algo  fedavg  Round No.  287
+Training Loss  0.8836546916198728 Training Accuracy  68.40199989318847
+Test Loss 0.9340297302246093 Test Accuracy  67.39
+Algo  fedavg  Round No.  288
+Training Loss  0.8841512523269652 Training Accuracy  68.50800006866456
+Test Loss 0.9345513401031494 Test Accuracy  67.5
+Algo  fedavg  Round No.  289
+Training Loss  0.8954367535781862 Training Accuracy  68.21399978637696
+Test Loss 0.9453794206619263 Test Accuracy  66.76
+Algo  fedavg  Round No.  290
+Training Loss  0.8807844156646731 Training Accuracy  68.6919998550415
+Test Loss 0.9337495134353637 Test Accuracy  67.32
+Algo  fedavg  Round No.  291
+Training Loss  0.8655278079223636 Training Accuracy  69.2020002746582
+Test Loss 0.9191671974182128 Test Accuracy  67.93
+Algo  fedavg  Round No.  292
+Training Loss  0.871082604484558 Training Accuracy  69.116000289917
+Test Loss 0.9235858806610108 Test Accuracy  67.54
+Algo  fedavg  Round No.  293
+Training Loss  0.8734648119926454 Training Accuracy  69.05600006103515
+Test Loss 0.9255938289642334 Test Accuracy  67.8
+Algo  fedavg  Round No.  294
+Training Loss  0.8727192588424683 Training Accuracy  68.45400005340576
+Test Loss 0.923694631767273 Test Accuracy  67.27
+Algo  fedavg  Round No.  295
+Training Loss  0.860640706443787 Training Accuracy  69.3439998626709
+Test Loss 0.9137543796539307 Test Accuracy  67.9
+Algo  fedavg  Round No.  296
+Training Loss  0.8640461649131774 Training Accuracy  69.37999992370605
+Test Loss 0.9173436517715454 Test Accuracy  67.8
+Algo  fedavg  Round No.  297
+Training Loss  0.8704550120925907 Training Accuracy  68.81799991607666
+Test Loss 0.9215171396255493 Test Accuracy  67.66
+Algo  fedavg  Round No.  298
+Training Loss  0.8573675521087645 Training Accuracy  69.44000022888184
+Test Loss 0.9096293563842773 Test Accuracy  68.37
+Algo  fedavg  Round No.  299
+Training Loss  0.8557516479492189 Training Accuracy  69.50999977111816
+Test Loss 0.9099353590011596 Test Accuracy  68.33
+Algo  fedavg  Round No.  300
+Training Loss  0.8826164633178709 Training Accuracy  68.4300001525879
+Test Loss 0.9362539686203003 Test Accuracy  67.09
+Algo  fedavg  Round No.  301
+Training Loss  0.8810795047760007 Training Accuracy  68.59999969482422
+Test Loss 0.9315193058013916 Test Accuracy  67.51
+Algo  fedavg  Round No.  302
+Training Loss  0.864320787658691 Training Accuracy  69.23200016021728
+Test Loss 0.9148131250381469 Test Accuracy  67.85
+Algo  fedavg  Round No.  303
+Training Loss  0.8570604336357119 Training Accuracy  69.39599994659424
+Test Loss 0.911489467048645 Test Accuracy  68.09
+Algo  fedavg  Round No.  304
+Training Loss  0.8533625854873658 Training Accuracy  69.59600021362304
+Test Loss 0.9103654609680176 Test Accuracy  67.99
+Algo  fedavg  Round No.  305
+Training Loss  0.8536212140274047 Training Accuracy  69.62799961090087
+Test Loss 0.9095076110839844 Test Accuracy  68.32
+Algo  fedavg  Round No.  306
+Training Loss  0.8461687444305419 Training Accuracy  69.95000011444091
+Test Loss 0.9007542219161987 Test Accuracy  68.69
+Algo  fedavg  Round No.  307
+Training Loss  0.8406683816909789 Training Accuracy  70.06200004577637
+Test Loss 0.8982689081192017 Test Accuracy  68.79
+Algo  fedavg  Round No.  308
+Training Loss  0.8474531174850468 Training Accuracy  69.67800029754639
+Test Loss 0.9059873056411744 Test Accuracy  68.44
+Algo  fedavg  Round No.  309
+Training Loss  0.8483582386589055 Training Accuracy  69.69199993133545
+Test Loss 0.9065500520706177 Test Accuracy  68.41
+Algo  fedavg  Round No.  310
+Training Loss  0.8556508406448364 Training Accuracy  69.55399993896485
+Test Loss 0.9119581077575684 Test Accuracy  68.19
+Algo  fedavg  Round No.  311
+Training Loss  0.8478451506614687 Training Accuracy  69.68199996948242
+Test Loss 0.9027692073822021 Test Accuracy  68.53
+Algo  fedavg  Round No.  312
+Training Loss  0.8455602755355835 Training Accuracy  69.62600009918214
+Test Loss 0.9009090833663941 Test Accuracy  68.22
+Algo  fedavg  Round No.  313
+Training Loss  0.8458884304046631 Training Accuracy  69.63600032806397
+Test Loss 0.9016277805328369 Test Accuracy  68.31
+Algo  fedavg  Round No.  314
+Training Loss  0.8295273681831361 Training Accuracy  70.48199989318847
+Test Loss 0.8853777284622193 Test Accuracy  69.19
+Algo  fedavg  Round No.  315
+Training Loss  0.8462112996482846 Training Accuracy  69.72400005340576
+Test Loss 0.9017434326171875 Test Accuracy  68.14
+Algo  fedavg  Round No.  316
+Training Loss  0.842865039806366 Training Accuracy  70.04199993133545
+Test Loss 0.8992546772003174 Test Accuracy  68.48
+Algo  fedavg  Round No.  317
+Training Loss  0.8443523202514647 Training Accuracy  69.78999988555908
+Test Loss 0.9031690065383912 Test Accuracy  68.24
+Algo  fedavg  Round No.  318
+Training Loss  0.8433252218818664 Training Accuracy  69.93399974822998
+Test Loss 0.9018708860397339 Test Accuracy  68.34
+Algo  fedavg  Round No.  319
+Training Loss  0.8346977528381347 Training Accuracy  70.16399990081787
+Test Loss 0.893815266418457 Test Accuracy  68.66
+Algo  fedavg  Round No.  320
+Training Loss  0.8259500004196166 Training Accuracy  70.58599960327149
+Test Loss 0.8845253955841065 Test Accuracy  69.05
+Algo  fedavg  Round No.  321
+Training Loss  0.8323886835670473 Training Accuracy  70.1959999847412
+Test Loss 0.8870068964004516 Test Accuracy  68.59
+Algo  fedavg  Round No.  322
+Training Loss  0.8363456647109986 Training Accuracy  69.94200004577637
+Test Loss 0.8903680185317994 Test Accuracy  68.52
+Algo  fedavg  Round No.  323
+Training Loss  0.8284653376960759 Training Accuracy  70.4419998550415
+Test Loss 0.8830898435592651 Test Accuracy  68.92
+Algo  fedavg  Round No.  324
+Training Loss  0.8379836690902708 Training Accuracy  70.09799995422364
+Test Loss 0.893881971359253 Test Accuracy  68.42
+Algo  fedavg  Round No.  325
+Training Loss  0.8344153879356384 Training Accuracy  70.14800048828126
+Test Loss 0.8924446687698364 Test Accuracy  68.41
+Algo  fedavg  Round No.  326
+Training Loss  0.822744341526031 Training Accuracy  70.78200000762939
+Test Loss 0.8817778757095337 Test Accuracy  69.21
+Algo  fedavg  Round No.  327
+Training Loss  0.836302992801666 Training Accuracy  70.23600032806397
+Test Loss 0.8930097961425781 Test Accuracy  68.48
+Algo  fedavg  Round No.  328
+Training Loss  0.8333389042282104 Training Accuracy  70.38799991607667
+Test Loss 0.8899878629684448 Test Accuracy  68.93
+Algo  fedavg  Round No.  329
+Training Loss  0.8277077248382568 Training Accuracy  70.67199989318847
+Test Loss 0.8867547996520996 Test Accuracy  69.08
+Algo  fedavg  Round No.  330
+Training Loss  0.8283216068458557 Training Accuracy  70.68200016021729
+Test Loss 0.8854388710021973 Test Accuracy  69.07
+Algo  fedavg  Round No.  331
+Training Loss  0.8294418691062926 Training Accuracy  70.52599967956543
+Test Loss 0.884556795501709 Test Accuracy  69.28
+Algo  fedavg  Round No.  332
+Training Loss  0.8254781930541989 Training Accuracy  70.6239998626709
+Test Loss 0.8804642868041992 Test Accuracy  69.24
+Algo  fedavg  Round No.  333
+Training Loss  0.8272884862899782 Training Accuracy  70.72199974060058
+Test Loss 0.8848433429718018 Test Accuracy  69.12
+Algo  fedavg  Round No.  334
+Training Loss  0.8241293450355529 Training Accuracy  70.55400058746338
+Test Loss 0.8837597646713257 Test Accuracy  68.81
+Algo  fedavg  Round No.  335
+Training Loss  0.8115254356765749 Training Accuracy  71.04599983215331
+Test Loss 0.8726677558898925 Test Accuracy  69.43
+Algo  fedavg  Round No.  336
+Training Loss  0.8153279541969298 Training Accuracy  70.82200004577636
+Test Loss 0.8765401796340943 Test Accuracy  69.42
+Algo  fedavg  Round No.  337
+Training Loss  0.821296797485352 Training Accuracy  70.48000003814697
+Test Loss 0.880916512298584 Test Accuracy  68.95
+Algo  fedavg  Round No.  338
+Training Loss  0.7984867238807679 Training Accuracy  71.4900001525879
+Test Loss 0.8592178201675416 Test Accuracy  69.88
+Algo  fedavg  Round No.  339
+Training Loss  0.8111881437492368 Training Accuracy  70.88799983978271
+Test Loss 0.8722531116485596 Test Accuracy  69.19
+Algo  fedavg  Round No.  340
+Training Loss  0.7996906562805175 Training Accuracy  71.46599998474122
+Test Loss 0.8619546443939209 Test Accuracy  70.0
+Algo  fedavg  Round No.  341
+Training Loss  0.8054952054405213 Training Accuracy  71.20400016784669
+Test Loss 0.869471948814392 Test Accuracy  69.73
+Algo  fedavg  Round No.  342
+Training Loss  0.8216589662551885 Training Accuracy  70.46800033569336
+Test Loss 0.8848230772018433 Test Accuracy  68.86
+Algo  fedavg  Round No.  343
+Training Loss  0.8086170310783387 Training Accuracy  71.06399971008301
+Test Loss 0.8721999809265136 Test Accuracy  69.41
+Algo  fedavg  Round No.  344
+Training Loss  0.8125228508186337 Training Accuracy  71.01600025177002
+Test Loss 0.8793059364318848 Test Accuracy  68.61
+Algo  fedavg  Round No.  345
+Training Loss  0.7963787857246402 Training Accuracy  71.67999996185303
+Test Loss 0.8610320301055908 Test Accuracy  69.48
+Algo  fedavg  Round No.  346
+Training Loss  0.8039671325302128 Training Accuracy  71.38599979400635
+Test Loss 0.8620839971542359 Test Accuracy  69.68
+Algo  fedavg  Round No.  347
+Training Loss  0.7914580835151671 Training Accuracy  71.75200000762939
+Test Loss 0.8515658929824829 Test Accuracy  69.95
+Algo  fedavg  Round No.  348
+Training Loss  0.7899658692359921 Training Accuracy  71.84200042724609
+Test Loss 0.8538565921783448 Test Accuracy  69.81
+Algo  fedavg  Round No.  349
+Training Loss  0.7949874604225158 Training Accuracy  71.68799983978272
+Test Loss 0.8555448879241944 Test Accuracy  69.75
+Algo  fedavg  Round No.  350
+Training Loss  0.802369241752624 Training Accuracy  71.27600009918213
+Test Loss 0.8619362031936646 Test Accuracy  69.36
+Algo  fedavg  Round No.  351
+Training Loss  0.7874403516769409 Training Accuracy  72.01799991607666
+Test Loss 0.8489473934173584 Test Accuracy  70.26
+Algo  fedavg  Round No.  352
+Training Loss  0.8075457367324828 Training Accuracy  71.15600009918212
+Test Loss 0.8702837936401367 Test Accuracy  69.36
+Algo  fedavg  Round No.  353
+Training Loss  0.7930346269035339 Training Accuracy  71.91599975585937
+Test Loss 0.8543914352416992 Test Accuracy  70.13
+Algo  fedavg  Round No.  354
+Training Loss  0.8077451774024966 Training Accuracy  71.28199989318847
+Test Loss 0.8699537689208985 Test Accuracy  69.37
+Algo  fedavg  Round No.  355
+Training Loss  0.7911510277366637 Training Accuracy  71.85800029754638
+Test Loss 0.8539883396148682 Test Accuracy  70.09
+Algo  fedavg  Round No.  356
+Training Loss  0.7862878597831725 Training Accuracy  71.99800003051757
+Test Loss 0.8491946533203125 Test Accuracy  70.54
+Algo  fedavg  Round No.  357
+Training Loss  0.7886149434089661 Training Accuracy  72.03400016784668
+Test Loss 0.8512053524017335 Test Accuracy  70.35
+Algo  fedavg  Round No.  358
+Training Loss  0.7839832005691528 Training Accuracy  72.21200016021729
+Test Loss 0.8466858995437622 Test Accuracy  70.31
+Algo  fedavg  Round No.  359
+Training Loss  0.7838579075241089 Training Accuracy  71.9160001373291
+Test Loss 0.845898956489563 Test Accuracy  69.92
+Algo  fedavg  Round No.  360
+Training Loss  0.7916454957771302 Training Accuracy  71.98599987030029
+Test Loss 0.8557887027740478 Test Accuracy  70.14
+Algo  fedavg  Round No.  361
+Training Loss  0.7799044790840148 Training Accuracy  72.39399997711182
+Test Loss 0.8475078769683838 Test Accuracy  70.37
+Algo  fedavg  Round No.  362
+Training Loss  0.7699637275314334 Training Accuracy  72.58399967193604
+Test Loss 0.8371295946121216 Test Accuracy  70.58
+Algo  fedavg  Round No.  363
+Training Loss  0.7710155672073367 Training Accuracy  72.5280001449585
+Test Loss 0.837148914718628 Test Accuracy  70.54
+Algo  fedavg  Round No.  364
+Training Loss  0.7737611515235899 Training Accuracy  72.4540002822876
+Test Loss 0.8378672843933106 Test Accuracy  70.42
+Algo  fedavg  Round No.  365
+Training Loss  0.7723916930580139 Training Accuracy  72.59400005340576
+Test Loss 0.8370266302108764 Test Accuracy  70.44
+Algo  fedavg  Round No.  366
+Training Loss  0.7641420874404906 Training Accuracy  72.84999973297118
+Test Loss 0.8323710578918457 Test Accuracy  70.71
+Algo  fedavg  Round No.  367
+Training Loss  0.768411164169312 Training Accuracy  72.50000022888183
+Test Loss 0.8362192573547363 Test Accuracy  70.6
+Algo  fedavg  Round No.  368
+Training Loss  0.7683562880134582 Training Accuracy  72.65599990844727
+Test Loss 0.8347934421539307 Test Accuracy  70.85
+Algo  fedavg  Round No.  369
+Training Loss  0.763162147960663 Training Accuracy  73.00600006103515
+Test Loss 0.83148486328125 Test Accuracy  70.91
+Algo  fedavg  Round No.  370
+Training Loss  0.7782956535911564 Training Accuracy  71.86200004577637
+Test Loss 0.8461682935714722 Test Accuracy  70.34
+Algo  fedavg  Round No.  371
+Training Loss  0.7805780636596673 Training Accuracy  72.04399978637696
+Test Loss 0.8465202438354492 Test Accuracy  70.47
+Algo  fedavg  Round No.  372
+Training Loss  0.7760984872245785 Training Accuracy  72.2839998626709
+Test Loss 0.8438068145751954 Test Accuracy  70.32
+Algo  fedavg  Round No.  373
+Training Loss  0.7715916926574709 Training Accuracy  72.40199996948242
+Test Loss 0.8399978021621705 Test Accuracy  70.38
+Algo  fedavg  Round No.  374
+Training Loss  0.7715775850105289 Training Accuracy  72.21199954986572
+Test Loss 0.8362151697158814 Test Accuracy  70.21
+Algo  fedavg  Round No.  375
+Training Loss  0.7745104541206358 Training Accuracy  72.37800006866455
+Test Loss 0.8379532480239869 Test Accuracy  70.43
+Algo  fedavg  Round No.  376
+Training Loss  0.7636029719161986 Training Accuracy  72.96999980926513
+Test Loss 0.8319818103790283 Test Accuracy  70.62
+Algo  fedavg  Round No.  377
+Training Loss  0.7571941428756713 Training Accuracy  73.04200004577636
+Test Loss 0.8282333421707153 Test Accuracy  70.77
+Algo  fedavg  Round No.  378
+Training Loss  0.7548695526885983 Training Accuracy  73.1739998626709
+Test Loss 0.8257551773071289 Test Accuracy  70.73
+Algo  fedavg  Round No.  379
+Training Loss  0.7618124155616759 Training Accuracy  72.89000011444092
+Test Loss 0.8326884210586548 Test Accuracy  70.63
+Algo  fedavg  Round No.  380
+Training Loss  0.7537118698120118 Training Accuracy  73.25800018310547
+Test Loss 0.8234062702178955 Test Accuracy  71.04
+Algo  fedavg  Round No.  381
+Training Loss  0.754103748188019 Training Accuracy  73.18599990844727
+Test Loss 0.8239672733306884 Test Accuracy  70.86
+Algo  fedavg  Round No.  382
+Training Loss  0.7521452289009092 Training Accuracy  73.27000007629394
+Test Loss 0.8215162914276123 Test Accuracy  70.95
+Algo  fedavg  Round No.  383
+Training Loss  0.7572732758522038 Training Accuracy  72.90599987030029
+Test Loss 0.8275171955108642 Test Accuracy  70.95
+Algo  fedavg  Round No.  384
+Training Loss  0.7509636482810975 Training Accuracy  73.2740002822876
+Test Loss 0.8211281177520752 Test Accuracy  71.03
+Algo  fedavg  Round No.  385
+Training Loss  0.7547033493232727 Training Accuracy  72.99999992370606
+Test Loss 0.8228068315505982 Test Accuracy  70.9
+Algo  fedavg  Round No.  386
+Training Loss  0.7577563038825983 Training Accuracy  73.00199989318848
+Test Loss 0.827911522102356 Test Accuracy  71.08
+Algo  fedavg  Round No.  387
+Training Loss  0.752768668460846 Training Accuracy  73.30400035858155
+Test Loss 0.8226401845932007 Test Accuracy  71.07
+Algo  fedavg  Round No.  388
+Training Loss  0.7503617791366579 Training Accuracy  73.26000003814697
+Test Loss 0.8193529836654663 Test Accuracy  71.23
+Algo  fedavg  Round No.  389
+Training Loss  0.7509396675872801 Training Accuracy  73.11800003051758
+Test Loss 0.8200519374847413 Test Accuracy  71.01
+Algo  fedavg  Round No.  390
+Training Loss  0.7560349583244326 Training Accuracy  72.93799987792968
+Test Loss 0.8242037246704101 Test Accuracy  70.67
+Algo  fedavg  Round No.  391
+Training Loss  0.755742617893219 Training Accuracy  72.89799987792969
+Test Loss 0.8226972202301025 Test Accuracy  70.64
+Algo  fedavg  Round No.  392
+Training Loss  0.7493572981834413 Training Accuracy  73.27200004577637
+Test Loss 0.8184844314575195 Test Accuracy  71.16
+Algo  fedavg  Round No.  393
+Training Loss  0.7457856254386903 Training Accuracy  73.52399993896485
+Test Loss 0.8185906942367553 Test Accuracy  71.36
+Algo  fedavg  Round No.  394
+Training Loss  0.7439142210960388 Training Accuracy  73.50999988555908
+Test Loss 0.8157953321456909 Test Accuracy  71.32
+Algo  fedavg  Round No.  395
+Training Loss  0.7387208857345581 Training Accuracy  73.69400043487549
+Test Loss 0.8112522966384887 Test Accuracy  71.4
+Algo  fedavg  Round No.  396
+Training Loss  0.7406851043128968 Training Accuracy  73.72199996948243
+Test Loss 0.8157041425704956 Test Accuracy  71.25
+Algo  fedavg  Round No.  397
+Training Loss  0.7306740413475038 Training Accuracy  74.03600017547608
+Test Loss 0.8036356788635254 Test Accuracy  71.85
+Algo  fedavg  Round No.  398
+Training Loss  0.7379369210052492 Training Accuracy  73.7819998550415
+Test Loss 0.8100548896789551 Test Accuracy  71.63
+Algo  fedavg  Round No.  399
+Training Loss  0.7464976760864259 Training Accuracy  73.63600021362305
+Test Loss 0.820159239768982 Test Accuracy  71.3
+Algo  fedavg  Round No.  400
+Training Loss  0.7321134368896484 Training Accuracy  74.05800033569336
+Test Loss 0.8046458253860473 Test Accuracy  71.62
+Algo  fedavg  Round No.  401
+Training Loss  0.737260415172577 Training Accuracy  73.79399997711181
+Test Loss 0.8114476768493653 Test Accuracy  71.54
+Algo  fedavg  Round No.  402
+Training Loss  0.7448534870147703 Training Accuracy  73.4919998550415
+Test Loss 0.8178358375549316 Test Accuracy  71.22
+Algo  fedavg  Round No.  403
+Training Loss  0.7306131138992312 Training Accuracy  73.95999992370605
+Test Loss 0.8044861824035644 Test Accuracy  71.68
+Algo  fedavg  Round No.  404
+Training Loss  0.7210370101547241 Training Accuracy  74.46600006103516
+Test Loss 0.796622350692749 Test Accuracy  71.81
+Algo  fedavg  Round No.  405
+Training Loss  0.723812714061737 Training Accuracy  74.32999984741211
+Test Loss 0.7998141269683838 Test Accuracy  71.77
+Algo  fedavg  Round No.  406
+Training Loss  0.7243597506713868 Training Accuracy  74.24200031280517
+Test Loss 0.7994942106246948 Test Accuracy  71.96
+Algo  fedavg  Round No.  407
+Training Loss  0.7236241286087036 Training Accuracy  74.24599948883056
+Test Loss 0.7967253076553344 Test Accuracy  71.9
+Algo  fedavg  Round No.  408
+Training Loss  0.7218602748680116 Training Accuracy  74.28000022888183
+Test Loss 0.7957941690444946 Test Accuracy  71.92
+Algo  fedavg  Round No.  409
+Training Loss  0.7193292011833192 Training Accuracy  74.4599997329712
+Test Loss 0.793771897315979 Test Accuracy  72.17
+Algo  fedavg  Round No.  410
+Training Loss  0.7182509448814394 Training Accuracy  74.44
+Test Loss 0.7941577970504761 Test Accuracy  72.38
+Algo  fedavg  Round No.  411
+Training Loss  0.7160996265983581 Training Accuracy  74.60599975585937
+Test Loss 0.7935237972259521 Test Accuracy  72.51
+Algo  fedavg  Round No.  412
+Training Loss  0.7097469637489318 Training Accuracy  74.87400012969971
+Test Loss 0.7876092897415161 Test Accuracy  72.53
+Algo  fedavg  Round No.  413
+Training Loss  0.718261655845642 Training Accuracy  74.65400005340577
+Test Loss 0.7938757127761841 Test Accuracy  72.36
+Algo  fedavg  Round No.  414
+Training Loss  0.7154575643348693 Training Accuracy  74.62399997711182
+Test Loss 0.7903534830093384 Test Accuracy  72.52
+Algo  fedavg  Round No.  415
+Training Loss  0.7108681468582156 Training Accuracy  74.89200016021728
+Test Loss 0.7864790061950684 Test Accuracy  72.77
+Algo  fedavg  Round No.  416
+Training Loss  0.728203584136963 Training Accuracy  74.24399997711181
+Test Loss 0.8056659952163696 Test Accuracy  71.62
+Algo  fedavg  Round No.  417
+Training Loss  0.7213237496185302 Training Accuracy  74.48200012207032
+Test Loss 0.7971975330352783 Test Accuracy  71.96
+Algo  fedavg  Round No.  418
+Training Loss  0.7250145960235596 Training Accuracy  74.35200016021729
+Test Loss 0.8009352233886718 Test Accuracy  71.87
+Algo  fedavg  Round No.  419
+Training Loss  0.7359117373657224 Training Accuracy  73.72399997711182
+Test Loss 0.8147526601791382 Test Accuracy  71.75
+Algo  fedavg  Round No.  420
+Training Loss  0.712336313381195 Training Accuracy  74.6940001296997
+Test Loss 0.7915002773284913 Test Accuracy  72.24
+Algo  fedavg  Round No.  421
+Training Loss  0.7193017077827453 Training Accuracy  74.50999996185303
+Test Loss 0.8001984355926514 Test Accuracy  71.84
+Algo  fedavg  Round No.  422
+Training Loss  0.7153900719070435 Training Accuracy  74.64399974822999
+Test Loss 0.7955148097991943 Test Accuracy  71.97
+Algo  fedavg  Round No.  423
+Training Loss  0.7065393270874023 Training Accuracy  74.95999996185303
+Test Loss 0.7842920196533203 Test Accuracy  72.6
+Algo  fedavg  Round No.  424
+Training Loss  0.7184208852577211 Training Accuracy  74.556000289917
+Test Loss 0.7976467218399048 Test Accuracy  72.09
+Algo  fedavg  Round No.  425
+Training Loss  0.7098062743568421 Training Accuracy  74.82400012969971
+Test Loss 0.7887163484573364 Test Accuracy  72.48
+Algo  fedavg  Round No.  426
+Training Loss  0.7026899512290953 Training Accuracy  75.00599990844727
+Test Loss 0.780568970298767 Test Accuracy  72.57
+Algo  fedavg  Round No.  427
+Training Loss  0.7130448773765561 Training Accuracy  74.65999980926513
+Test Loss 0.7915112096786499 Test Accuracy  72.08
+Algo  fedavg  Round No.  428
+Training Loss  0.7208662258529663 Training Accuracy  74.37199989318847
+Test Loss 0.8006808059692383 Test Accuracy  71.94
+Algo  fedavg  Round No.  429
+Training Loss  0.7196981224060062 Training Accuracy  74.59200012207032
+Test Loss 0.7988313285827636 Test Accuracy  72.24
+Algo  fedavg  Round No.  430
+Training Loss  0.7029956007766723 Training Accuracy  75.10799995422363
+Test Loss 0.7832708841323852 Test Accuracy  72.81
+Algo  fedavg  Round No.  431
+Training Loss  0.6991702192497253 Training Accuracy  75.19999996185302
+Test Loss 0.7800253002166748 Test Accuracy  72.55
+Algo  fedavg  Round No.  432
+Training Loss  0.7120010837554932 Training Accuracy  74.64800010681152
+Test Loss 0.790703427696228 Test Accuracy  72.17
+Algo  fedavg  Round No.  433
+Training Loss  0.7032345931434629 Training Accuracy  74.93400012969971
+Test Loss 0.7820374794006347 Test Accuracy  72.56
+Algo  fedavg  Round No.  434
+Training Loss  0.7102833644866944 Training Accuracy  74.69600017547607
+Test Loss 0.7895679557800293 Test Accuracy  72.35
+Algo  fedavg  Round No.  435
+Training Loss  0.7116026889228819 Training Accuracy  74.60200004577636
+Test Loss 0.7938139486312866 Test Accuracy  72.49
+Algo  fedavg  Round No.  436
+Training Loss  0.7192012131881714 Training Accuracy  74.33999988555908
+Test Loss 0.8026758409500122 Test Accuracy  72.01
+Algo  fedavg  Round No.  437
+Training Loss  0.6952502726745605 Training Accuracy  75.14399971008301
+Test Loss 0.7783820125579834 Test Accuracy  72.86
+Algo  fedavg  Round No.  438
+Training Loss  0.6976022134780884 Training Accuracy  75.1139998626709
+Test Loss 0.7783360372543335 Test Accuracy  72.8
+Algo  fedavg  Round No.  439
+Training Loss  0.7077449917030333 Training Accuracy  74.8220001220703
+Test Loss 0.7883109468460083 Test Accuracy  72.65
+Algo  fedavg  Round No.  440
+Training Loss  0.7073262966728209 Training Accuracy  74.6640000152588
+Test Loss 0.7910260028839111 Test Accuracy  72.52
+Algo  fedavg  Round No.  441
+Training Loss  0.6985490436553952 Training Accuracy  75.04200004577636
+Test Loss 0.7831401023864746 Test Accuracy  72.64
+Algo  fedavg  Round No.  442
+Training Loss  0.6891183130836483 Training Accuracy  75.4719994354248
+Test Loss 0.7727780508041382 Test Accuracy  73.03
+Algo  fedavg  Round No.  443
+Training Loss  0.6894817407798768 Training Accuracy  75.44999980926514
+Test Loss 0.7729285331726075 Test Accuracy  72.94
+Algo  fedavg  Round No.  444
+Training Loss  0.6889690501403811 Training Accuracy  75.50199970245362
+Test Loss 0.7725399892807007 Test Accuracy  72.88
+Algo  fedavg  Round No.  445
+Training Loss  0.6845470916366578 Training Accuracy  75.67399993896484
+Test Loss 0.7671329265594482 Test Accuracy  73.19
+Algo  fedavg  Round No.  446
+Training Loss  0.6991460546684265 Training Accuracy  74.93200027465821
+Test Loss 0.7798891885757446 Test Accuracy  72.48
+Algo  fedavg  Round No.  447
+Training Loss  0.7156270462608337 Training Accuracy  74.24800003051757
+Test Loss 0.795687650680542 Test Accuracy  71.54
+Algo  fedavg  Round No.  448
+Training Loss  0.692849827709198 Training Accuracy  75.25999969482422
+Test Loss 0.7742632717132568 Test Accuracy  72.6
+Algo  fedavg  Round No.  449
+Training Loss  0.6873929324722289 Training Accuracy  75.43399955749511
+Test Loss 0.7696595809936524 Test Accuracy  72.87
+Algo  fedavg  Round No.  450
+Training Loss  0.682511453495026 Training Accuracy  75.73399993896484
+Test Loss 0.7663531875610352 Test Accuracy  73.17
+Algo  fedavg  Round No.  451
+Training Loss  0.6774727043533326 Training Accuracy  76.05400024414062
+Test Loss 0.7635479160308838 Test Accuracy  73.35
+Algo  fedavg  Round No.  452
+Training Loss  0.6780788200569152 Training Accuracy  75.95199943542481
+Test Loss 0.7625244146347046 Test Accuracy  73.03
+Algo  fedavg  Round No.  453
+Training Loss  0.6893473319053652 Training Accuracy  75.47200023651124
+Test Loss 0.7725841955184937 Test Accuracy  72.93
+Algo  fedavg  Round No.  454
+Training Loss  0.6845694876289368 Training Accuracy  75.55399978637695
+Test Loss 0.768602307510376 Test Accuracy  73.11
+Algo  fedavg  Round No.  455
+Training Loss  0.681550149707794 Training Accuracy  75.70199996948242
+Test Loss 0.7635537685394287 Test Accuracy  73.26
+Algo  fedavg  Round No.  456
+Training Loss  0.6933986593437196 Training Accuracy  75.36
+Test Loss 0.7749094490051269 Test Accuracy  72.96
+Algo  fedavg  Round No.  457
+Training Loss  0.6883971918869021 Training Accuracy  75.50199989318848
+Test Loss 0.7711124179840088 Test Accuracy  73.13
+Algo  fedavg  Round No.  458
+Training Loss  0.68316518119812 Training Accuracy  75.53000026702881
+Test Loss 0.769558847618103 Test Accuracy  73.16
+Algo  fedavg  Round No.  459
+Training Loss  0.6907277523612976 Training Accuracy  75.13799995422363
+Test Loss 0.7800840948104858 Test Accuracy  72.28
+Algo  fedavg  Round No.  460
+Training Loss  0.6832598941230773 Training Accuracy  75.48199996948242
+Test Loss 0.7701847352981568 Test Accuracy  72.74
+Algo  fedavg  Round No.  461
+Training Loss  0.697343609981537 Training Accuracy  75.09400012969971
+Test Loss 0.7827852094650268 Test Accuracy  72.82
+Algo  fedavg  Round No.  462
+Training Loss  0.7076164567375182 Training Accuracy  74.7460001373291
+Test Loss 0.7924162448883056 Test Accuracy  72.49
+Algo  fedavg  Round No.  463
+Training Loss  0.691251232662201 Training Accuracy  75.36200008392333
+Test Loss 0.7779375761032105 Test Accuracy  72.87
+Algo  fedavg  Round No.  464
+Training Loss  0.6650375519943235 Training Accuracy  76.40199962615966
+Test Loss 0.7551951885223389 Test Accuracy  73.6
+Algo  fedavg  Round No.  465
+Training Loss  0.6650494152832028 Training Accuracy  76.55999996185302
+Test Loss 0.7548182079315185 Test Accuracy  73.54
+Algo  fedavg  Round No.  466
+Training Loss  0.6744074777412414 Training Accuracy  76.13999992370606
+Test Loss 0.7639909875869751 Test Accuracy  73.37
+Algo  fedavg  Round No.  467
+Training Loss  0.6794053493690491 Training Accuracy  75.90199981689453
+Test Loss 0.7690283166885375 Test Accuracy  73.29
+Algo  fedavg  Round No.  468
+Training Loss  0.6820377387046814 Training Accuracy  75.91800018310546
+Test Loss 0.7708603178024293 Test Accuracy  73.13
+Algo  fedavg  Round No.  469
+Training Loss  0.6867268165969849 Training Accuracy  75.60800018310547
+Test Loss 0.7737726467132569 Test Accuracy  72.73
+Algo  fedavg  Round No.  470
+Training Loss  0.6801884711837771 Training Accuracy  75.70199996948242
+Test Loss 0.769213141822815 Test Accuracy  73.06
+Algo  fedavg  Round No.  471
+Training Loss  0.6665533778381344 Training Accuracy  76.24800022125244
+Test Loss 0.7567153442382812 Test Accuracy  73.43
+Algo  fedavg  Round No.  472
+Training Loss  0.6791432002449038 Training Accuracy  75.88599971771241
+Test Loss 0.7672439496994019 Test Accuracy  73.55
+Algo  fedavg  Round No.  473
+Training Loss  0.681437709197998 Training Accuracy  75.73599990844727
+Test Loss 0.7710630502700806 Test Accuracy  73.29
+Algo  fedavg  Round No.  474
+Training Loss  0.6725632187843322 Training Accuracy  75.98600002288818
+Test Loss 0.765142391204834 Test Accuracy  73.18
+Algo  fedavg  Round No.  475
+Training Loss  0.6672682617187501 Training Accuracy  76.03399997711182
+Test Loss 0.7607442968368531 Test Accuracy  73.43
+Algo  fedavg  Round No.  476
+Training Loss  0.6633438414382937 Training Accuracy  76.38799991607667
+Test Loss 0.7546566974639892 Test Accuracy  73.42
+Algo  fedavg  Round No.  477
+Training Loss  0.6681143163681029 Training Accuracy  76.20000003814697
+Test Loss 0.7596550909042359 Test Accuracy  73.25
+Algo  fedavg  Round No.  478
+Training Loss  0.6683349938964844 Training Accuracy  76.09599998474121
+Test Loss 0.7587628923416138 Test Accuracy  73.21
+Algo  fedavg  Round No.  479
+Training Loss  0.6676287584495542 Training Accuracy  76.1379997253418
+Test Loss 0.7588172235488891 Test Accuracy  73.23
+Algo  fedavg  Round No.  480
+Training Loss  0.6671228509044649 Training Accuracy  76.25400024414063
+Test Loss 0.7597303466796875 Test Accuracy  73.45
+Algo  fedavg  Round No.  481
+Training Loss  0.6621265706443787 Training Accuracy  76.4659998703003
+Test Loss 0.7498123151779175 Test Accuracy  73.65
+Algo  fedavg  Round No.  482
+Training Loss  0.6675756151962281 Training Accuracy  76.19800018310546
+Test Loss 0.7548598838806152 Test Accuracy  73.37
+Algo  fedavg  Round No.  483
+Training Loss  0.6689183692932129 Training Accuracy  76.12000038146972
+Test Loss 0.7563149333953857 Test Accuracy  73.38
+Algo  fedavg  Round No.  484
+Training Loss  0.6604219314765933 Training Accuracy  76.48799995422364
+Test Loss 0.7488591844558716 Test Accuracy  73.63
+Algo  fedavg  Round No.  485
+Training Loss  0.6626458457756041 Training Accuracy  76.45400005340576
+Test Loss 0.754502879524231 Test Accuracy  73.42
+Algo  fedavg  Round No.  486
+Training Loss  0.6526570793724059 Training Accuracy  76.83200004577637
+Test Loss 0.7445754859924316 Test Accuracy  73.87
+Algo  fedavg  Round No.  487
+Training Loss  0.6632223290443422 Training Accuracy  76.42800003051758
+Test Loss 0.7550469600677491 Test Accuracy  73.73
+Algo  fedavg  Round No.  488
+Training Loss  0.6492558046913146 Training Accuracy  76.79999950408936
+Test Loss 0.7414307670593262 Test Accuracy  73.97
+Algo  fedavg  Round No.  489
+Training Loss  0.6528295791149141 Training Accuracy  76.7540004348755
+Test Loss 0.7450661994934082 Test Accuracy  73.99
+Algo  fedavg  Round No.  490
+Training Loss  0.6543120485687258 Training Accuracy  76.56399974822997
+Test Loss 0.7481547307968139 Test Accuracy  73.78
+Algo  fedavg  Round No.  491
+Training Loss  0.6538295572853088 Training Accuracy  76.67399993896484
+Test Loss 0.7476159515380859 Test Accuracy  73.76
+Algo  fedavg  Round No.  492
+Training Loss  0.6491878055953981 Training Accuracy  77.01999980926513
+Test Loss 0.743177081489563 Test Accuracy  73.97
+Algo  fedavg  Round No.  493
+Training Loss  0.6510229878234861 Training Accuracy  77.0759998703003
+Test Loss 0.7439509746551514 Test Accuracy  73.65
+Algo  fedavg  Round No.  494
+Training Loss  0.6506493903923036 Training Accuracy  76.76799987792968
+Test Loss 0.7429963136672973 Test Accuracy  74.09
+Algo  fedavg  Round No.  495
+Training Loss  0.6464642602920534 Training Accuracy  77.09999973297118
+Test Loss 0.7407977554321289 Test Accuracy  74.19
+Algo  fedavg  Round No.  496
+Training Loss  0.654899914894104 Training Accuracy  76.7019998550415
+Test Loss 0.7461298051834107 Test Accuracy  74.01
+Algo  fedavg  Round No.  497
+Training Loss  0.6542079308319094 Training Accuracy  76.71799995422363
+Test Loss 0.7453079126358032 Test Accuracy  73.77
+Algo  fedavg  Round No.  498
+Training Loss  0.6592649409675602 Training Accuracy  76.43399997711181
+Test Loss 0.7525659200668335 Test Accuracy  73.14
+Algo  fedavg  Round No.  499
+Training Loss  0.6500322400283813 Training Accuracy  76.70800022125245
+Test Loss 0.7460557899475098 Test Accuracy  73.8
+Algo  fedavg  Round No.  500
+Training Loss  0.6543332097434997 Training Accuracy  76.5880001449585
+Test Loss 0.7516278276443481 Test Accuracy  73.66
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: \ 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: | 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: / 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: - 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: \ 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: | 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:  global_lr ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   test_acc ▁▂▃▃▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇▇██████████
+wandb:  test_loss █▇▆▆▅▅▅▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁
+wandb:  train_acc ▁▂▃▃▃▄▄▄▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇█████████
+wandb: train_loss █▇▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:  global_lr 1.0
+wandb:   test_acc 73.66
+wandb:  test_loss 0.75163
+wandb:  train_acc 76.588
+wandb: train_loss 0.65433
+wandb: 
+wandb: 🚀 View run ./log/fedavg_avg_eval at: https://wandb.ai/ljb/fedexp/runs/j6jbovsm
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230309_050101-j6jbovsm/logs

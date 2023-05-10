@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "personachat",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/chong.tian/code/fedexp/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1",
+            },
+            "args": [
+                "--seed", "0",
+                "--algorithm", "fedavg",
+                "--dataset", "personachat",
+                "--model", "gpt2",
+                "--num_clients", "-1",
+                "--num_participating_clients", "100",
+                "--num_rounds", "100",
+                "--cp", "5",
+                "--alpha", "-1.0",
+                "--weight_decay", "0.0",
+                "--l2_reg", "0.05",
+                "--eta_l", "0.01",
+                "--eta_g", "1.0",
+                "--epsilon", "0.0",
+                "--mu", "0.0",
+                "--decay", "0.998",
+                "--max_norm", "10.0",
+                "--filename", "./log/pc/fedavg_lr0.01_debug",
+                "--use_gradient_clipping",
+                "--use_debug_max",
+                "--no_wandb",
+            ]
+        },
+        {
+            "name": "cifar10",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/chong.tian/code/fedexp/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--seed", "0",
+                "--algorithm", "fedavg",
+                "--dataset", "CIFAR10",
+                "--model", "resnet20",
+                "--num_clients", "100",
+                "--num_participating_clients", "20",
+                "--num_rounds", "2000",
+                "--alpha", "100",
+                "--weight_decay", "0.0",
+                "--l2_reg", "0.0",
+                "--eta_l", "0.01",
+                "--eta_g", "1.0",
+                "--epsilon", "0.0",
+                "--mu", "0.0",
+                "--decay", "0.998",
+                "--filename", "./log/fedavg_lr0.01_debug",
+                "--use_gradient_clipping",
+                "--no_wandb",
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+wandb: Currently logged in as: ljb. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.11 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.10
+wandb: Run data is saved locally in /home/junbo.li/code/FedExP/wandb/run-20230314_094621-y6a8z308
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ./log/fedexp_cinic10
+wandb: ⭐️ View project at https://wandb.ai/ljb/fedexp
+wandb: 🚀 View run at https://wandb.ai/ljb/fedexp/runs/y6a8z308
+Traceback (most recent call last):
+  File "/home/junbo.li/code/FedExP/main.py", line 93, in <module>
+    dataset_train, dataset_test_global = get_dataset(dataset, num_clients, n_c, alpha, True)
+  File "/home/junbo.li/code/FedExP/util_data.py", line 158, in get_dataset
+    dataset_train_global = datasets.ImageFolder('cinic_train',transform=transforms.Compose([transforms.ToTensor(),transforms.Normalize(mean=cinic_mean,std=cinic_std)]))
+  File "/home/junbo.li/.conda/envs/fedcls/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 309, in __init__
+    super().__init__(
+  File "/home/junbo.li/.conda/envs/fedcls/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/home/junbo.li/.conda/envs/fedcls/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "/home/junbo.li/.conda/envs/fedcls/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: 'cinic_train'
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: \ 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: | 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: / 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: - 0.028 MB of 0.028 MB uploaded (0.000 MB deduped)wandb: 🚀 View run ./log/fedexp_cinic10 at: https://wandb.ai/ljb/fedexp/runs/y6a8z308
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230314_094621-y6a8z308/logs

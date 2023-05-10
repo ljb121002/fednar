@@ -1,0 +1,10 @@
+*/*.pt
+wandb/
+data/
+
+log/pc/*.pt
+
+LEAF/shakespeare/data
+
+*/__pycache__
+__pycache__
