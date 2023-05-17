@@ -1,5 +1,0 @@
-fedavg(mom)_training_loss [1.699258487089299e+20, nan, nan, nan]
-fedavg(mom)_training_accuracy [10.000000058859587, 10.000000030845404, 10.000000030845404, 10.000000030845404]
-fedavg(mom)_test_loss [1.6992585206129695e+20, nan, nan, nan]
-fedavg(mom)_testing_accuracy [array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32), array(10., dtype=float32)]
-fedavg(mom)_global_learning_rate [1.0, 1.0, 1.0, 1.0]

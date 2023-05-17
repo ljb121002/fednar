@@ -1,5 +1,0 @@
-fedadam_training_loss [nan, nan]
-fedadam_training_accuracy [10.000000030845404, 10.000000030845404]
-fedadam_test_loss [nan, nan]
-fedadam_testing_accuracy [array(10., dtype=float32), array(10., dtype=float32)]
-fedadam_global_learning_rate [0.1, 0.1]
