@@ -8,15 +8,15 @@ CUDA_VISIBLE_DEVICES=$1 python main.py \
     --num_participating_clients 20 \
     --num_rounds 1000 \
     --alpha 0.3 \
-    --cp 100 \
-    --batch_size 100 \
-    --weight_decay 0 \
-    --l2_reg 1e-4 \
+    --cp 20 \
+    --batch_size 500 \
+    --weight_decay 1e-4 \
+    --l2_reg 0 \
     --eta_l 0.1 \
     --eta_g 1.0 \
     --epsilon 0.0 \
     --mu 0.001 \
     --decay 0.998 \
-    --max_norm 10.0 \
-    --filename ./log/shake_fedprox_wd0_reg1e-4_clip_bs100cp100 \
+    --max_norm 5.0 \
+    --filename ./log/shake_fedprox_wd1e-4_reg0_clip_bs500cp20_max5 \
     --use_gradient_clipping

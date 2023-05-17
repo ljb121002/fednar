@@ -212,8 +212,8 @@ def get_best_ratio(w_curr, w_prev, net_eval_grid, grid=0.1, start=0.0, end=1.0):
 # ==============================================================================================
 
 
-net_glob_org = torch.nn.DataParallel(net_glob_org)
-net_glol_org = torch.compile(net_glob_org)
+# net_glob_org = torch.nn.DataParallel(net_glob_org)
+# net_glol_org = torch.compile(net_glob_org)
 
 
 algs = [algorithm]
@@ -296,8 +296,8 @@ for alg in algs:
             grad_avg = grad_avg + p[i]*grad
             grad_square_avg_curr = grad_square_avg_curr + p[i]*torch.square(grad)
             p_sum += p[i]
-            if ii % (len(ind)//5) == 0:
-                print('finished clients ', ii)
+            # if ii % (len(ind)//5) == 0:
+                # print('finished clients ', ii)
         
         grad_square_avg = copy.deepcopy(grad_square_avg_curr)
 

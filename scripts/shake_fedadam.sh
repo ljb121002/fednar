@@ -10,26 +10,24 @@
 #SBATCH -p long                                          # Use the gpu partition
 #SBATCH --time=24:00:00                          # Specify the time needed for your experiment
 
-for seed in 1 2
-do
-    CUDA_VISIBLE_DEVICES=$1 python main.py \
-        --seed $seed \
-        --algorithm "scaffold" \
-        --dataset "CIFAR10" \
-        --model "resnet18" \
-        --num_clients 100 \
-        --num_participating_clients 20 \
-        --num_rounds 1000 \
-        --cp 20 \
-        --alpha 0.3 \
-        --weight_decay 0.0 \
-        --l2_reg 0.1 \
-        --eta_l 0.01 \
-        --eta_g 1.0 \
-        --epsilon 0.0 \
-        --mu 0.0 \
-        --decay 0.998 \
-        --max_norm 10.0 \
-        --filename ./log/scaffold_lr0.01_wd0.0_reg0.1_clip_seed$seed \
-        --use_gradient_clipping
-done
+CUDA_VISIBLE_DEVICES=$1 python main.py \
+    --seed 0 \
+    --algorithm "fedadam" \
+    --dataset "shakespeare" \
+    --model "shakespeare" \
+    --num_clients 100 \
+    --num_participating_clients 20 \
+    --num_rounds 1000 \
+    --cp 100 \
+    --batch_size 100 \
+    --alpha 0.3 \
+    --weight_decay 1e-3 \
+    --l2_reg 0 \
+    --eta_l 0.01 \
+    --eta_g 0.1 \
+    --epsilon 0.01 \
+    --mu 0.0 \
+    --decay 0.998 \
+    --max_norm 10.0 \
+    --filename ./log/shake_fedadam_lr0.01_wd1e-3_reg0_eps0.01_clip \
+    --use_gradient_clipping

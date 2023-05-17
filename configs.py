@@ -217,7 +217,7 @@ def get_configs(dataset):
 
 def get_hyper_round(decay, local_lr, epsilon, mu, weight_decay, global_lr, use_gradient_clipping, max_norm, dataset, t):
     local_lr = decay*local_lr
-    # local_lr = decay ** t * 0.01 / (6.5 * t / 2000 + 1)
+    
     epsilon = decay*decay*epsilon
 
     # if t < 500:

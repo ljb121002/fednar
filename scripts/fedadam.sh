@@ -10,7 +10,8 @@
 #SBATCH -p long                                          # Use the gpu partition
 #SBATCH --time=24:00:00                          # Specify the time needed for your experiment
 
-for alpha in 10
+# for wd in 1e-4 1e-3 1e-2 5e-2 1e-1
+for alpha in 1 10
 do
     CUDA_VISIBLE_DEVICES=$1 python main.py \
         --seed 0 \
@@ -19,17 +20,17 @@ do
         --model "resnet18" \
         --num_clients 100 \
         --num_participating_clients 20 \
-        --num_rounds 2000 \
+        --num_rounds 500 \
         --cp 20 \
-        --alpha ${alpha} \
-        --weight_decay 0.0 \
-        --l2_reg 0.01 \
+        --alpha $alpha \
+        --weight_decay 0.001 \
+        --l2_reg 0.0 \
         --eta_l 0.01 \
         --eta_g 0.1 \
         --epsilon 0.01 \
         --mu 0.0 \
         --decay 0.998 \
         --max_norm 10.0 \
-        --filename ./log/fedadam_lr0.01_wd0.0_reg0.01_eps0.01_clip_alpha${alpha} \
+        --filename ./log/fedadam_lr0.01_wd0.001_reg0.0_eps0.01_clip_alpha$alpha \
         --use_gradient_clipping
 done

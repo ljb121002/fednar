@@ -10,26 +10,26 @@
 #SBATCH -p long                                          # Use the gpu partition
 #SBATCH --time=24:00:00                          # Specify the time needed for your experiment
 
-for alpha in 1 10
+for seed in 1 2
 do
     CUDA_VISIBLE_DEVICES=$1 python main.py \
-        --seed 0 \
+        --seed $seed \
         --algorithm "fedavg" \
         --dataset "CIFAR10" \
         --model "resnet18" \
         --num_clients 100 \
         --num_participating_clients 20 \
-        --num_rounds 2000 \
+        --num_rounds 1000 \
         --cp 20 \
-        --alpha $alpha \
-        --weight_decay 0.001 \
-        --l2_reg 0.0 \
+        --alpha 0.3 \
+        --weight_decay 0.0 \
+        --l2_reg 0.1 \
         --eta_l 0.01 \
         --eta_g 1.0 \
         --epsilon 0.0 \
         --mu 0.0 \
         --decay 0.998 \
         --max_norm 10.0 \
-        --filename ./log/fedavg_lr0.01_wd0.001_reg0.0_clip_alpha${alpha} \
+        --filename ./log/fedavg_lr0.01_wd0.0_reg0.1_clip_seed$seed \
         --use_gradient_clipping
 done
