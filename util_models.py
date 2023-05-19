@@ -4,50 +4,6 @@ import torch.nn as nn
 #####################################################
 # Neural net architectures
 ####################################################
-
-class FedNet(nn.Module):
-    def __init__(self,n_c):
-        super(FedNet, self).__init__()
-        self.conv1 = nn.Conv2d(3, 32, kernel_size=5)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=5)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-        self.fc1 = nn.Linear(64*5*5, 384)
-        self.fc2 = nn.Linear(384,192)
-        self.fc3 = nn.Linear(192, n_c)
-
-    def forward(self, x):
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(-1, 64*5*5)
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        return x
-
-
-class EMNIST_CNN(nn.Module):
-    def __init__(self):
-        super(EMNIST_CNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3)
-        self.fc1 = nn.Linear(12*12*64, 128)
-        self.fc2 = nn.Linear(128, 62)
-
-        self.dropout1 = nn.Dropout(0.25)
-        self.dropout2 = nn.Dropout(0.5)
-
-
-    def forward(self, x):
-        x = func.relu(self.conv1(x))
-        x = func.relu(self.conv2(x))
-        x = func.max_pool2d(x, 2)
-        x = self.dropout1(x)
-
-        x = x.view(x.size(0), -1)
-        x = func.relu(self.fc1(x))
-        x = self.dropout2(x)
-        x = self.fc2(x)
-        return x
     
 class BasicBlock(nn.Module):
     expansion = 1
@@ -69,6 +25,7 @@ class BasicBlock(nn.Module):
         out += self.shortcut(x)
         out = F.relu(out)
         return out
+    
 class ResNet(nn.Module):
     def __init__(self, block, num_blocks, num_classes=10):
         super(ResNet, self).__init__()
@@ -101,19 +58,9 @@ class ResNet(nn.Module):
 def resnet18(n_c):
     return ResNet(BasicBlock, [2,2,2,2], num_classes=n_c)
 
-def resnet34(n_c):
-    return ResNet(BasicBlock, [3,4,6,3], num_classes=n_c)
-
 
 def get_model(model,n_c):
-  if(model=='resnet18'):
     return resnet18(n_c)
-  elif(model == 'CNN'):
-    return FedNet(n_c)
-  elif(model=='EMNIST_CNN'):
-    return EMNIST_CNN()
-  elif(model == 'resnet34'):
-      return resnet34(n_c)
 
 
 

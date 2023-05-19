@@ -1,17 +1,11 @@
 */*.pt
 wandb/
 data/
-
 log/
-log/pc/*.pt
 slurm_out/
-
+.vscode
 *.ipynb
-
 LEAF/shakespeare/data
-
-util_general_persona.py
-util_models_res20.py
 
 */__pycache__
 __pycache__

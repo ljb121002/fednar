@@ -16,7 +16,4 @@ CUDA_VISIBLE_DEVICES=$1 python main.py \
     --eta_g 1.0 \
     --epsilon 0.0 \
     --mu 0.001 \
-    --decay 0.998 \
-    --max_norm 5.0 \
-    --filename ./log/shake_fedprox_wd1e-4_reg0_clip_bs500cp20_max5 \
-    --use_gradient_clipping
+    --filename ./log/shake_fedprox_wd1e-4_l2reg0 \
