@@ -128,10 +128,9 @@ class LocalUpdate_scaffold(object):
 
                 loss.backward()
 
-                if(self.use_gradient_clipping ==True):
-                    total_norm = torch.nn.utils.clip_grad_norm_(parameters=net.parameters(), max_norm=self.max_norm)
-                    if total_norm >= self.max_norm:
-                        norms.append(total_norm)
+                total_norm = torch.nn.utils.clip_grad_norm_(parameters=net.parameters(), max_norm=self.max_norm)
+                if total_norm >= self.max_norm:
+                    norms.append(total_norm)
 
                 optimizer.step()
                 batch_loss.append(loss.item())
@@ -199,10 +198,9 @@ class LocalUpdate_fedprox(object):
 
                 loss.backward()
 
-                if(self.use_gradient_clipping==True):
-                    total_norm = torch.nn.utils.clip_grad_norm_(parameters=net.parameters(), max_norm=self.max_norm)
-                    if total_norm >= self.max_norm:
-                        norms.append(total_norm)
+                total_norm = torch.nn.utils.clip_grad_norm_(parameters=net.parameters(), max_norm=self.max_norm)
+                if total_norm >= self.max_norm:
+                    norms.append(total_norm)
 
                 optimizer.step()
                 batch_loss.append(loss.item())

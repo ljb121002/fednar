@@ -34,19 +34,24 @@ parser.add_argument('--epsilon', default=0.0, type=float, required=True)
 parser.add_argument('--mu', default=0.0, type=float, required=True)
 
 parser.add_argument('--weight_decay', default=1e-4, type=float, required=True)
-parser.add_argument('--l2_reg', default=0.0, type=float, required=True, help='l2 loss added on loss')
+parser.add_argument('--l2_reg', default=0.0, type=float, required=False, help='l2 loss added on loss')
 parser.add_argument('--max_norm', default=10.0, type=float, required=False)
 parser.add_argument('--decay', default=0.998, type=float, required=False)
 parser.add_argument('--batch_size', default=50, type=int)
 
 parser.add_argument('--use_grid', default=False, action='store_true')
 parser.add_argument('--no_model_avg', default=False, action='store_true')
+parser.add_argument('--use_nar', default=False, action='store_true')
 
 # shakespeare
 parser.add_argument('--num_layer', default=6, type=int)
 parser.add_argument('--drop_out', default=0.1, type=float)
 
 args_required = parser.parse_args()
+
+if args_required.use_nar:
+    args_required.l2_reg = args_required.weight_decay
+    args_required.weight_decay = 0.0
 
 seed = args_required.seed
 dataset = args_required.dataset

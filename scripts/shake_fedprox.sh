@@ -11,9 +11,9 @@ CUDA_VISIBLE_DEVICES=$1 python main.py \
     --cp 20 \
     --batch_size 500 \
     --weight_decay 1e-4 \
-    --l2_reg 0 \
     --eta_l 0.1 \
     --eta_g 1.0 \
     --epsilon 0.0 \
     --mu 0.001 \
-    --filename ./log/shake_fedprox_wd1e-4_l2reg0 \
+    --filename ./log/shake_fedprox \
+    # --use_nar

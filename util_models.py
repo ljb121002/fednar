@@ -87,9 +87,9 @@ class shake_transf(nn.Module):
         x = self.embedding(x) * math.sqrt(self.embedding_dim)
         positions = torch.arange(0, x.size(1), device=x.device).unsqueeze(0).repeat(x.size(0), 1)
         x = x + self.position_encoder(positions)
-        x = x.permute(1, 0, 2) # transformer accepts in this style
+        x = x.permute(1, 0, 2)
         x = self.transformer_encoder(x)
-        x = x.permute(1, 0, 2)[:, -1, :] # Take the last sequence output
+        x = x.permute(1, 0, 2)[:, -1, :]
         x = self.fc(x)
 
         return x

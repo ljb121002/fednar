@@ -9,9 +9,9 @@ CUDA_VISIBLE_DEVICES=$1 python main.py \
     --cp 20 \
     --alpha 0.3 \
     --weight_decay 0.05 \
-    --l2_reg 0.0 \
     --eta_l 0.01 \
     --eta_g 1.0 \
     --epsilon 0.0 \
     --mu 0.0 \
-    --filename ./log/fedavg_wd0.05_reg0.0
+    --filename ./log/fedavg \
+    # --use_nar

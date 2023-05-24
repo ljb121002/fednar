@@ -10,9 +10,9 @@ CUDA_VISIBLE_DEVICES=$1 python main.py \
     --batch_size 100 \
     --alpha 0.3 \
     --weight_decay 1e-4 \
-    --l2_reg 0.0 \
     --eta_l 0.01 \
     --eta_g 0.1 \
     --epsilon 0.01 \
     --mu 0.0 \
-    --filename ./log/shake_fedadam_wd1e-4_reg0.0
+    --filename ./log/shake_fedadam \
+    # --use_nar
